@@ -1,6 +1,6 @@
 # Allmaps at Yale Library
 
-A Yale Library staff demonstration of [Allmaps](https://allmaps.org) and the Allmaps–IIIF Partnership, told with maps from [Yale Digital Collections](https://collections.library.yale.edu). Twenty-one map slides, from a scan of Doolittle's 1817 plan of New Haven through a century of city maps, a 1590 portolan chart and a 1780 planisphere, to what the partnership means for Yale.
+A Yale Library staff demonstration of [Allmaps](https://allmaps.org) and the Allmaps–IIIF Partnership, told with maps from [Yale Digital Collections](https://collections.library.yale.edu). Twenty-four map slides, from a scan of Doolittle's 1817 plan of New Haven through a century of city maps, a 1590 portolan chart and a 1780 planisphere, to what the partnership means for Yale.
 
 Built with [Allmaps Slides](https://github.com/allmaps/slides) from the [slides template](https://github.com/allmaps/slides-template). Each slide is a Markdown file in `slideshows/main/` with its map settings in YAML frontmatter; `slides.config.yml` holds the project settings; `CREDITS.md` lists every map, its catalogue record and the sources for the figures quoted.
 
