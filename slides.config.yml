@@ -1,0 +1,22 @@
+title:
+  short: Allmaps at Yale Library
+  long: Allmaps at Yale Library — every digitized map, put back on the ground
+description: A Yale Library staff demonstration of Allmaps and the Allmaps–IIIF Partnership, told with maps from Yale Digital Collections.
+theme: blue
+main: main
+credits: CREDITS.md
+
+slideshows:
+  - id: main
+    path: slideshows/main
+    title: Allmaps at Yale Library
+
+site:
+  basePath: ""
+  publicUrl: ""
+
+# Get your own key at https://protomaps.com/api and add the GitHub Pages origin
+# to its allowed sites. The key is published in the built site, so it carries
+# no secret; it only controls which origins may use it.
+protomaps:
+  key: ${PUBLIC_PROTOMAPS_KEY}
