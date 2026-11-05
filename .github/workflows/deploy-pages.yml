@@ -92,6 +92,8 @@ jobs:
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v6
+        with:
+          enablement: true
 
       - name: Build static site
         id: build-static-site
