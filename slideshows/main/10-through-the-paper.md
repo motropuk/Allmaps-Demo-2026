@@ -20,3 +20,5 @@ warpedMaps:
 The same 1893 map with its **paper removed**. Allmaps renders every map on the graphics card, so the colour of the sheet can be filtered out in real time and only the linework stays. Underneath is today's New Haven: the Green, the campus and the ward lines sit on the modern streets without the sheet in the way.
 
 This is the *Remove background* control in the Allmaps Viewer. Nothing was edited: the IIIF image is untouched, and the filter is a rendering option stored alongside the slide.
+
+[Open this map in the Allmaps Lab](lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.

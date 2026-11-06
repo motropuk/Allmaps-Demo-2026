@@ -15,3 +15,5 @@ warpedMaps:
 The thin-plate spline can also be shown as a **distortion map**. The colour wash measures how much each part of the chart had to be stretched or squeezed to pass through the control points; the stronger the tint, the more the local scale had to change.
 
 For a cartographic historian this is evidence rather than decoration: it shows where a sixteenth-century pilot's bearings and distances were reliable and where they were not. The same measure is available in the Viewer for any georeferenced map.
+
+[Open this map in the Allmaps Lab](lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.

@@ -22,3 +22,5 @@ warpedMaps:
 Now the linework is **colorized** in Yale blue. Treated this way a historic map becomes a layer like any other in a GIS: an overlay you can read against a modern basemap, or against another historic map in a second colour.
 
 Opacity, saturation, background removal, colorizing and a grid are all per-map rendering options in the Allmaps renderer, and every one of them is a control in the Viewer. Hold **Space** to compare with the basemap alone.
+
+[Open this map in the Allmaps Lab](lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.

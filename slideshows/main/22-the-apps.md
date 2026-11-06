@@ -13,7 +13,7 @@ warpedMaps:
       opacity: 0.95
 ---
 
-Four browser apps, no accounts, no installation.
+Four browser apps, no accounts, no installation. And one page of our own: the [Allmaps Lab](lab/), built on the same `@allmaps/maplibre` package, with every rendering control live on the Yale maps from this story.
 
 - [**Allmaps Editor**](https://editor.allmaps.org/#/collection?url=https://collections.library.yale.edu/manifests/15675122) opens any IIIF manifest. Paste a Yale Digital Collections manifest URL and you are georeferencing. There is no save button: every edit is published automatically, versioned and open.
 - [**Allmaps Viewer**](https://viewer.allmaps.org/?url=https://annotations.allmaps.org/maps/eb1bcd302edd84f8) opens any annotation as a map, with the controls you have just seen as slides: opacity, background removal, colorize, grid, distortion, transformation type, and a layers panel for multi-sheet atlases such as [this Boston atlas of thirty-one sheets](https://viewer.allmaps.org/?url=https%3A%2F%2Fannotations.allmaps.org%2Fmanifests%2F23379602e8187445). Look for the *Yale University Library* badge: our organization branding, with a link back to Digital Collections, on every map we georeference.
