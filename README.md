@@ -26,3 +26,7 @@ Pushes to `main` build and deploy to GitHub Pages through `.github/workflows/dep
 ## Licence
 
 The original text and configuration in this repository are released under CC0 1.0 (`LICENSE`). Material retained from the Allmaps Slides template (the workflow, the `reference/` files and `docs/usage.md`) is CC BY 4.0 and is credited in `CREDITS.md`. The maps keep Yale Library's rights statements; the georeference annotations are CC0; the Slides application has its own licences.
+
+## Full screen
+
+`extras/fullscreen.js` is injected into every page at build time (see the workflow). Clicking **Start** enters full screen; a button under the title and the **F** key toggle it.

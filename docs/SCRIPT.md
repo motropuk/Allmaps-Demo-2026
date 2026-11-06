@@ -8,7 +8,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 - **Space (press and hold)**: hides the historic map so today's map shows underneath; let go to bring it back. Cues: **[Space]** … **[release]**
 - **H**: hide or show the text panel. Cue: **[H]**
 - **Esc**: close the text panel
-- **Full screen (Chrome on Mac)**: **Ctrl + Cmd + F**; press again to leave. If the address bar still shows, press **Cmd + Shift + F** to hide it.
+- **Full screen**: happens automatically when you click **Start**. To leave or re-enter, click the full-screen button under the title (top left) or press **F**.
 - **Mouse**: drag to move the map, scroll to zoom. Cue: **[scroll to zoom]**
 - **If a map ever comes up blank**: **Cmd + Shift + R** reloads on the same slide.
 
