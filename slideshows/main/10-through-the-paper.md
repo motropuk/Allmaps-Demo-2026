@@ -21,4 +21,4 @@ The same 1893 map with its **paper removed**. Allmaps renders every map on the g
 
 This is the *Remove background* control in the Allmaps Viewer. Nothing was edited: the IIIF image is untouched, and the filter is a rendering option stored alongside the slide.
 
-[Open this map in the Allmaps Lab](lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.
+[Open this map in the Allmaps Lab](https://motropuk.github.io/Allmaps-Demo-2026/lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.

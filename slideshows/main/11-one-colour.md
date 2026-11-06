@@ -23,4 +23,4 @@ Now the linework is **colorized** in Yale blue. Treated this way a historic map 
 
 Opacity, saturation, background removal, colorizing and a grid are all per-map rendering options in the Allmaps renderer, and every one of them is a control in the Viewer. Hold **Space** to compare with the basemap alone.
 
-[Open this map in the Allmaps Lab](lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.
+[Open this map in the Allmaps Lab](https://motropuk.github.io/Allmaps-Demo-2026/lab/) to move the sliders yourself: opacity, background removal, colorize, grid, control points and transformation type, on any of the maps in this story.
