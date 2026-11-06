@@ -1,6 +1,16 @@
 # Allmaps at Yale Library — speaker notes
 
-Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmaps-Demo-2026/. One section per slide. The floating panel on each slide carries the facts for the audience; these notes say something different, in a speaking voice, and tell you when to move. Cues are in square brackets: [→] advance, [Space] hold Space to show the modern map underneath, [H] hide the panel. About 22 minutes. Open the site a few minutes early so the first maps are cached.
+Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmaps-Demo-2026/. One section per slide. The panel on each slide carries the facts for the audience; these notes are what you say, with cues in square brackets for when to act. About 22 minutes.
+
+## Keys
+
+- **→ / ←**: next / previous slide. Cue in the notes: **[→]**
+- **Space (press and hold)**: hides the historic map so today's map shows underneath; let go to bring it back. Cues: **[Space]** … **[release]**
+- **H**: hide or show the text panel. Cue: **[H]**
+- **Esc**: close the text panel
+- **Full screen (Chrome on Mac)**: **Ctrl + Cmd + F**; press again to leave. If the address bar still shows, press **Cmd + Shift + F** to hide it.
+- **Mouse**: drag to move the map, scroll to zoom. Cue: **[scroll to zoom]**
+- **If a map ever comes up blank**: **Cmd + Shift + R** reloads on the same slide.
 
 ## 1 · Every digitized map, put back on the ground (0:00)
 
@@ -68,7 +78,7 @@ Look at the shoreline. Compare the 1847 waterfront with today's and you can see 
 
 ## 12 · 1883 (10:00)
 
-1883. Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. A sheet this regular needed only four control points. [→]
+1883: Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. A sheet this regular needed only four control points. [→]
 
 ## 13 · 1883, paper removed (10:20)
 
