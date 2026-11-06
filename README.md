@@ -26,3 +26,7 @@ Pushes to `main` build and deploy to GitHub Pages through `.github/workflows/dep
 ## Licence
 
 The original text and configuration in this repository are released under CC0 1.0 (`LICENSE`). Material retained from the Allmaps Slides template (the workflow, the `reference/` files and `docs/usage.md`) is CC BY 4.0 and is credited in `CREDITS.md`. The maps keep Yale Library's rights statements; the georeference annotations are CC0; the Slides application has its own licences.
+
+## Warm-up before presenting
+
+Yale's image server can be slow on the first request for each map, and a tile that times out stays blank until the slide is reloaded. Open **`warm-up/`** (https://motropuk.github.io/Allmaps-Demo-2026/warm-up/) a few minutes before you start: it steps through all thirty slides in a frame so every map is fetched once, then offers a *Start the presentation* button that hides the progress panel and goes full screen, with the maps already in memory. Yale caches tiles for 15 minutes, so start within that time or run it again. `?dwell=12` lengthens the pause per slide on a slow connection.
