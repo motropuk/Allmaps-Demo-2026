@@ -1,0 +1,18 @@
+---
+title: 1817, half transparent
+location:
+  center: [-72.9268, 41.3083]
+  zoom: 14.7
+  duration: 0
+warpedMaps:
+  - url: https://annotations.allmaps.org/maps/444ba126f2bf8974
+    caption: "Plan of the city of New Haven, Amos Doolittle, 1817"
+    provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
+    homepage: https://collections.library.yale.edu/catalog/15675073
+    options:
+      opacity: 0.45
+---
+
+The same map at **45% opacity**, with today's streets showing through: Doolittle's blocks sit on the modern ones. Opacity is the first of the Viewer's rendering controls, a slider you can set anywhere between the historic map and the modern one.
+
+Not every scan has a paper colour that can be filtered away. Doolittle's sheet is dark and uneven, so transparency is the right tool here; the maps that follow have clean paper, and for those the Viewer's *magic pen* removes the sheet entirely, as the next slides show.

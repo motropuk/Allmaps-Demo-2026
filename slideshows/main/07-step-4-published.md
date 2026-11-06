@@ -1,0 +1,20 @@
+---
+title: "Step 4: it is published"
+location:
+  center: [-72.9268, 41.3083]
+  zoom: 14.6
+  duration: 0
+warpedMaps:
+  - url: https://annotations.allmaps.org/maps/444ba126f2bf8974
+    caption: "Plan of the city of New Haven, Amos Doolittle, 1817"
+    provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
+    homepage: https://collections.library.yale.edu/catalog/15675073
+    options:
+      opacity: 0.9
+---
+
+There is no save button. Every edit in the Editor is stored at once as a **Georeference Annotation**: a small open file, a few kilobytes of JSON, published under CC0 at a stable web address. It records the IIIF image, the mask and the control points, nothing more. The image itself never moves; it stays on Yale's server.
+
+That file is what every Allmaps app, and any other tool that understands the IIIF Georeference Extension, reads to draw the map in place. It is also what makes the map discoverable by location, which is the subject of the last part of this story.
+
+Doolittle's annotation: [annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974)

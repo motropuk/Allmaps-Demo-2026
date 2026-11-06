@@ -124,9 +124,6 @@ jobs:
           path: node_modules/.vite/slides/thumbnails
           key: thumbnails-v4-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.run_id }}-${{ github.run_attempt }}
 
-      - name: Add the Allmaps Lab page
-        run: mkdir -p dist/site/lab && cp -r lab/. dist/site/lab/
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
