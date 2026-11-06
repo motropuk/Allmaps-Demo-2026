@@ -11,6 +11,7 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675122
     options:
       opacity: 0.95
+      removeColor: false
 ---
 
 This is the 1883 Price, Lee & Co. map of New Haven. [Open it in the Allmaps Editor](https://editor.allmaps.org/#/collection?url=https://collections.library.yale.edu/manifests/15675122) to see exactly how it was georeferenced, or pick any map from [Yale's organization page](https://editor.allmaps.org/organizations/yale) to start one of your own.

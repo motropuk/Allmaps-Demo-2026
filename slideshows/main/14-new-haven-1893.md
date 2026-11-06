@@ -11,6 +11,8 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675132
     options:
       opacity: 0.9
+      removeColor: false
+      colorize: false
 ---
 
 **1893.** A. B. Hill's survey, the most precise of the set, with forty control points. Ward boundaries in red, parks in green, every public building named. This is the map from the first slide.

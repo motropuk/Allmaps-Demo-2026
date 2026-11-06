@@ -11,6 +11,8 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675132
     options:
       opacity: 0.9
+      removeColor: false
+      colorize: false
 ---
 
 Because our maps are delivered through IIIF, every one of them is already in Allmaps. Open [editor.allmaps.org/organizations/yale](https://editor.allmaps.org/organizations/yale), pick any map, and start placing points; nothing to install, no account to create. Every georeferenced map shows a *Yale University Library* badge with a link back to Digital Collections wherever it appears.

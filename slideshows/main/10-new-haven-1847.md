@@ -11,6 +11,7 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15830186
     options:
       opacity: 0.9
+      removeColor: false
 ---
 
 **1847.** The *Map of the city of New Haven*. The grid pushes out towards the harbour and along the Mill River, and the railway has arrived. Forty control points.

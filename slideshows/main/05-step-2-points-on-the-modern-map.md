@@ -10,8 +10,16 @@ warpedMaps:
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
     options:
-      renderMaps: false
+      renderMaps: true
+      opacity: 0
+      applyMask: true
+      renderMask: false
       renderGcps: true
+      renderTransformedGcps: false
+      renderVectors: false
+      transformationType: polynomial
+      removeColor: false
+      colorize: false
       renderGcpsColor: "#2563eb"
       renderGcpsSize: 14
       renderGcpsBorderColor: "#ffffff"

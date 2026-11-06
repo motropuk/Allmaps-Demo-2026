@@ -10,7 +10,16 @@ warpedMaps:
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
     options:
+      renderMaps: true
       opacity: 0.45
+      applyMask: true
+      renderMask: false
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
+      transformationType: polynomial
+      removeColor: false
+      colorize: false
 ---
 
 The same map at **45% opacity**, with today's streets showing through: Doolittle's blocks sit on the modern ones. Opacity is the first of the Viewer's rendering controls, a slider you can set anywhere between the historic map and the modern one.

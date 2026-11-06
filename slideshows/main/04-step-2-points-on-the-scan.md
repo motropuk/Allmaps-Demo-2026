@@ -8,13 +8,19 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675073
     useBearing: true
     options:
+      renderMaps: true
+      opacity: 1
       applyMask: false
       renderMask: true
-      renderMaskColor: "#ff56ba"
+      renderGcps: false
       renderTransformedGcps: true
+      renderVectors: false
+      transformationType: helmert
+      removeColor: false
+      colorize: false
+      renderMaskColor: "#ff56ba"
       renderTransformedGcpsColor: "#ff56ba"
       renderTransformedGcpsSize: 14
-      transformationType: helmert
 ---
 
 Next come the **control points**. In the Editor the screen is split: the scan on the left, a modern map on the right. You click a place on the scan, then click the same place on the modern map. Each click pair becomes a control point: a pixel on the scan matched to a longitude and latitude on the earth.

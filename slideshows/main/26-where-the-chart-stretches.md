@@ -10,6 +10,9 @@ warpedMaps:
       transformationType: thinPlateSpline
       distortionMeasure: log2sigma
       opacity: 0.95
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
 ---
 
 The same fit shown as a **distortion map**: the tint measures how much each part of the chart had to be stretched or squeezed to pass through the control points. For a cartographic historian that is evidence, not decoration: it shows where a sixteenth-century pilot's bearings were reliable and where they were not.

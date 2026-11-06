@@ -11,6 +11,8 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675132
     options:
       opacity: 0.95
+      removeColor: false
+      colorize: false
 ---
 
 Allmaps is a free, open-source tool that lays historical maps over modern ones. The process is called **georeferencing**. Anyone can do it in a web browser, with no GIS software and no specialist training, and once a map is georeferenced people can search it by place, compare it with today's map, and use it as data.

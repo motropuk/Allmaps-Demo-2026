@@ -8,11 +8,18 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675073
     useBearing: true
     options:
+      renderMaps: true
+      opacity: 1
       applyMask: false
       renderMask: true
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
+      transformationType: helmert
+      removeColor: false
+      colorize: false
       renderMaskColor: "#ff56ba"
       renderMaskSize: 3
-      transformationType: helmert
 ---
 
 Georeferencing starts by drawing a **mask**: a polygon around the part of the scan you want to work with. The pink outline here is Doolittle's mask. It goes around the map itself and leaves out the margins, the dedication and the cartouche, so that only the map is warped and everything else is cropped away.

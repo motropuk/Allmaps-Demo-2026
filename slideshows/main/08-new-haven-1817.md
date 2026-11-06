@@ -10,7 +10,16 @@ warpedMaps:
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
     options:
+      renderMaps: true
       opacity: 0.9
+      applyMask: true
+      renderMask: false
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
+      transformationType: polynomial
+      removeColor: false
+      colorize: false
 ---
 
 Now the maps themselves. Six maps of New Haven from Yale's collections, each georeferenced, each laid over today's street grid at the same spot. Watch the Green as you step through them: it stays put while the city grows around it.

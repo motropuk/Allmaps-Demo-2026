@@ -8,8 +8,16 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675073
     useBearing: true
     options:
+      renderMaps: true
+      opacity: 1
       applyMask: false
+      renderMask: false
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
       transformationType: helmert
+      removeColor: false
+      colorize: false
 ---
 
 Yale has digitized thousands of maps and publishes them through IIIF, the standard that lets images be viewed and shared across institutions. But a digitized map is a picture of a map. This is Amos Doolittle's 1817 plan of New Haven, dedicated *to the mayor, aldermen and Common Council*: a very good picture, 11,483 pixels wide, that does not know where it is. It cannot be laid over today's streets, compared with another map of the same place, or found by searching for a place.

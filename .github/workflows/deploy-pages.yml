@@ -103,9 +103,6 @@ jobs:
           PUBLIC_PROTOMAPS_KEY: ${{ vars.PUBLIC_PROTOMAPS_KEY }}
         run: xvfb-run -a pnpm exec slides build . --outDir dist/site
 
-      - name: Add the warm-up page
-        run: cp -r warm-up dist/site/warm-up
-
       - name: Save IIIF derivatives
         if: ${{ success() || steps.build-static-site.outcome == 'failure' }}
         uses: actions/cache/save@v6

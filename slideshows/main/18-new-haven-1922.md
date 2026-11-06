@@ -11,6 +11,7 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/33439049
     options:
       opacity: 0.9
+      removeColor: false
 ---
 
 **1922.** The *Map of New Haven and Suburbs*, from Manuscripts and Archives, ten control points. A century after Doolittle the Nine Squares are a small part of the whole.

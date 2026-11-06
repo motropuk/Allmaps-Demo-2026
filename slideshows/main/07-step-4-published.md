@@ -10,7 +10,16 @@ warpedMaps:
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
     options:
+      renderMaps: true
       opacity: 0.9
+      applyMask: true
+      renderMask: false
+      renderGcps: false
+      renderTransformedGcps: false
+      renderVectors: false
+      transformationType: polynomial
+      removeColor: false
+      colorize: false
 ---
 
 There is no save button. Every edit in the Editor is stored at once as a **Georeference Annotation**: a small open file, a few kilobytes of JSON, published under CC0 at a stable web address. It records the IIIF image, the mask and the control points, nothing more. The image itself never moves; it stays on Yale's server.
