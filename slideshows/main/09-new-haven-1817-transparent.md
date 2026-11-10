@@ -22,6 +22,6 @@ warpedMaps:
       colorize: false
 ---
 
-The same map at **45% opacity**, with today's streets showing through: Doolittle's blocks sit on the modern ones. Opacity is the first of the Viewer's rendering controls, a slider you can set anywhere between the historic map and the modern one.
+The same map at **45% opacity**, with today's streets showing through: Doolittle's blocks sit on the modern ones. Opacity is one of the first controls in the Allmaps Viewer: a slider you can set anywhere between the historic map and the modern one.
 
 Not every scan has a paper colour that can be filtered away. Doolittle's sheet is dark and uneven, so transparency is the right tool here; the maps that follow have clean paper, and for those the Viewer's *magic pen* removes the sheet entirely, as the next slides show.

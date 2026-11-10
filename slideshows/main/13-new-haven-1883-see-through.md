@@ -17,4 +17,4 @@ warpedMaps:
       opacity: 1
 ---
 
-Paper removed. The ward boundaries and the street names stay legible on the modern map.
+Paper removed. The ward boundaries and the street names stay legible on the modern map. With only four control points the fit is looser in places; adding points in the Editor would tighten it.

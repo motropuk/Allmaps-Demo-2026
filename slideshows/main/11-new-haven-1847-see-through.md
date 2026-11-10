@@ -17,4 +17,4 @@ warpedMaps:
       opacity: 1
 ---
 
-Paper removed. Compare the 1847 shoreline with today's: much of what is now the waterfront is filled land.
+Paper removed, with the Viewer's *magic pen*: nothing was edited, the colour of the sheet is filtered out as the map is drawn. Compare the 1847 shoreline with today's: much of what is now Long Wharf and the harbour edge is filled land.

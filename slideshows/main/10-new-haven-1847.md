@@ -14,4 +14,4 @@ warpedMaps:
       removeColor: false
 ---
 
-**1847.** The *Map of the city of New Haven*. The grid pushes out towards the harbour and along the Mill River, and the railway has arrived. Forty control points.
+**1847.** The *Map of the city of New Haven*. The city has pushed out towards the harbour and along the Mill River, and you can see the development that has followed. Forty control points.

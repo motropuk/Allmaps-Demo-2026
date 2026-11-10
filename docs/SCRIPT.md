@@ -53,29 +53,29 @@ This is the view the Editor gives you on its Results step, so you can see at a g
 
 Step four is the one you don't have to do. There is no save button. Every edit is stored straight away as a Georeference Annotation: a few kilobytes of open JSON at a stable web address, which records three things: the IIIF image, the mask and the points. That is the whole output. The image never moves; it stays on our server, under our control.
 
-That small file is what every Allmaps app reads to draw the map in place, and it is what makes the map findable by location, which is where this story ends up. And it always keeps the link back to the original. [click the title strip at the top, or press I] Just as in the Allmaps Viewer, the strip at the top tells you which map this is and that it comes from Yale University Library. Click it and you get the source information: the catalogue details from our IIIF manifest, and a link straight to the record in Yale Digital Collections. [click Yale Digital Collections page, then come back to the deck] [Esc to close] Now, the maps. [→]
+That small file is what Allmaps uses to draw the map in the right place, and it is also what lets people find the map by searching for a place. It also keeps the link back to the original. Alongside the Editor there is the Allmaps Viewer, the app where anyone can look at maps once they have been georeferenced. [click the title strip at the top, or press I] Just as in the Viewer, the strip at the top tells you which map this is and that it comes from Yale University Library. Click it and you get the source information: the catalogue details from our IIIF manifest, and a link straight to the record in Yale Digital Collections. [click Yale Digital Collections page, then come back to the deck] [Esc to close] [→]
 
 ## 8 · New Haven, 1817 (7:30)
 
-Six maps of New Haven from our collections, each georeferenced, each laid over the same spot. As I step through them, watch the Green. It stays put while the city grows around it.
+So that is how a map gets georeferenced. Now let's look at a bit more of what Allmaps can do, through six maps of New Haven from our collections, in date order. Each one has been georeferenced and laid over the same spot. As I step through them, watch the Green: it stays put while the city grows around it.
 
-1817: Doolittle, masked to the Nine Squares. The Green at the centre, with Yale College on its west side. I am going to show each map twice: as it is, and then see-through, so you can see where the historic streets fall on today's. [→]
+1817: Doolittle again, the map we have just georeferenced, masked to the Nine Squares. The Green in the middle, with Yale College on its west side. I am going to show you each map twice: first as it is, and then with one of the features Allmaps gives you, starting with opacity, so you can see where the historic streets fall on today's. [→]
 
 ## 9 · 1817, half transparent (8:15)
 
-Same map at 45 per cent. Doolittle's blocks sitting on the modern ones. Opacity is the first of the Viewer's controls, a slider you can set anywhere between the historic map and the modern one.
+This is the same map at 45 per cent opacity. Doolittle's blocks sit on the modern ones, and you can see today's streets coming through underneath. Opacity is one of the first controls you meet in the Allmaps Viewer: a slider you can move back and forth anywhere between the historic map and the modern one.
 
-I should say why this one is a slider and the rest are not. Doolittle's sheet is dark and uneven, so there is no single paper colour to filter out. The maps that follow have clean paper, and for those Allmaps has a better trick, which I will show you next. [→]
+I should say why this one uses opacity and the rest do not. Doolittle's sheet is dark and uneven, so there is no single paper colour to filter out. The maps that follow have clean paper, and for those Allmaps has a better trick, which I will show you next. [→]
 
 ## 10 · 1847 (9:00)
 
-Thirty years on. The Map of the City of New Haven, 1847. The grid has pushed out towards the harbour and along the Mill River, and the railway has arrived. Forty control points on this one. [→]
+Thirty years on: the Map of the City of New Haven, 1847. The city has pushed out towards the harbour and along the Mill River, and you can see the development that has followed. This one has forty control points. [→]
 
 ## 11 · 1847, paper removed (9:30)
 
-And here is the trick. The paper is gone and only the drawing is left, lying on the modern map. Nothing was edited. Allmaps draws every map on the graphics card, so the colour of the sheet is filtered out as it renders. In the Viewer this is a single button, the magic pen.
+And here is the trick. The paper is gone and only the drawing is left, lying on the modern map. Nothing was edited: Allmaps draws every map on the graphics card, so the colour of the sheet is filtered out as the map is drawn. In the Viewer this is a single button, with a magic pen icon.
 
-Look at the shoreline. Compare the 1847 waterfront with today's and you can see how much of what is now Long Wharf and the harbour edge is filled land. [→]
+Look along the shoreline. Compare the 1847 waterfront with today's and you can see how much of what is now Long Wharf and the harbour edge is filled land. [→]
 
 ## 12 · 1883 (10:00)
 
@@ -83,23 +83,23 @@ Look at the shoreline. Compare the 1847 waterfront with today's and you can see 
 
 ## 13 · 1883, paper removed (10:20)
 
-Paper removed. The ward boundaries and the street names stay perfectly legible on the modern map. [→]
+Paper removed. The ward boundaries and the street names stay legible on the modern map. You will notice this one does not line up quite as well in places: four control points is not many, and the fit is looser between them. Anyone can open it in the Editor and add more points to tighten it. [→]
 
 ## 14 · 1893 (10:45)
 
-1893, Hill's survey. The most precise of the set, with forty points; this is the map from the first slide. Ward boundaries in red, parks in green, every public building named. [→]
+1893, A. B. Hill's survey, probably the most precise of the set, with forty points. This is the map from the very first slide. Ward boundaries in red, parks in green, every public building named. [→]
 
 ## 15 · 1893, one colour (11:15)
 
-Paper removed, and this time the drawing colorized in Yale blue. The point of this is not decoration. Treated this way a historic map becomes a layer like any other: you can read it against the modern map, or put a second historic map underneath in a second colour and read the two against each other. Colorize is another Viewer button, next to the magic pen. [→]
+Paper removed, and this time the drawing colorized in blue. Treated this way, a historic map becomes a layer like any other. It is easier to read against the modern map, or you could put a second historic map underneath in a different colour and compare the two. Colorize is another Viewer option, next to the magic pen. [→]
 
 ## 16 · 1911 (11:45)
 
-1911, the Saloon map of New Haven, made for one purpose: to plot where every saloon in the city stood. Eleven control points. Some of you will have seen this one already; it was the example in the partnership update I circulated, and the link on the panel opens it in the Viewer, where you can click the magic pen and do the next slide yourself. [H to show the link, H again to hide] [→]
+1911, the Saloon map of New Haven, made for one purpose: to plot where every saloon in the city stood in 1911. Eleven control points. Some of you will have seen this one already; it featured in the Yale Library news item about Allmaps that I circulated. [→]
 
 ## 17 · 1911, paper removed (12:15)
 
-Every red mark is a saloon, now on the modern block where it stood. If you work on New Haven history, this is the moment the map stops being an illustration and becomes data. [→]
+And here it is with the paper removed. Every red mark is a saloon, now on the modern block where it stood. If you work on New Haven history, this is the moment the map stops being an illustration and becomes data, and really useful data at that. [→]
 
 ## 18 · 1922 (12:45)
 
@@ -107,7 +107,7 @@ Every red mark is a saloon, now on the modern block where it stood. If you work 
 
 ## 19 · 1922, paper removed (13:15)
 
-Paper removed. Step back through these six and what you have is a fixed frame of reference across maps made by different people, for different reasons, over a hundred years. "What was on this block in 1883" stops being a research project and becomes a matter of flicking back a few slides. [→]
+Paper removed again. Step back through these six and what you have is a fixed frame of reference across maps made by different people, for different reasons, over a hundred years. "What was on this block in 1883?" stops being a research project and becomes a matter of flicking back a few slides. [→]
 
 ## 20 · From the city to the colony (13:45)
 

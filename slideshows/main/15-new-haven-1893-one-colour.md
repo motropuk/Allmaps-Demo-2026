@@ -19,4 +19,4 @@ warpedMaps:
       colorizeColor: "#00356b"
 ---
 
-Paper removed and the drawing **colorized** in Yale blue. Treated this way a historic map becomes a layer like any other: something you can read against the modern map, or against another historic map in another colour. Colorize is also a Viewer setting, next to the magic pen.
+Paper removed and the drawing **colorized** in blue. Treated this way a historic map becomes a layer like any other: easier to read against the modern map, or you can put a second historic map underneath in another colour and compare the two. Colorize is also a Viewer setting, next to the magic pen.

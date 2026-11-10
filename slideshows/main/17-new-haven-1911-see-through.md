@@ -17,4 +17,4 @@ warpedMaps:
       opacity: 1
 ---
 
-Paper removed. Every red mark is a saloon, now on the modern block where it stood.
+Paper removed. Every red mark is a saloon, now on the modern block where it stood: the map stops being an illustration and becomes data.
