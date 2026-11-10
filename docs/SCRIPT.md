@@ -6,7 +6,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 
 - **→ / ←**: next / previous slide. Cue in the notes: **[→]**
 - **Space (press and hold)**: hides the historic map so today's map shows underneath; let go to bring it back. Cues: **[Space]** … **[release]**
-- **H**: hide or show the text panel. Cue: **[H]**
+- **H**: show or hide the text panel. The panel starts hidden, so the maps fill the screen; press H when you want the audience to read the panel or click a link in it. Cue: **[H]**
 - **Esc**: close the text panel
 - **Full screen**: happens automatically when you click **Start**. To leave or re-enter, click the full-screen button under the title (top left) or press **F**.
 - **Mouse**: drag to move the map, scroll to zoom. Cue: **[scroll to zoom]**
@@ -14,7 +14,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 
 ## 1 · Every digitized map, put back on the ground (0:00)
 
-Good morning, and thank you for coming. I want to start with the picture rather than the pitch. [H to hide the panel for a moment] What you are looking at is one of our maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image from our own Digital Collections server right now, tile by tile, and bending it to sit on top of a modern street map. [Space] Hold a key and there is today's New Haven underneath. [release] And there is 1893 again.
+Good morning, and thank you for coming. I want to start with the picture rather than the pitch. What you are looking at is one of our maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image from our own Digital Collections server right now, tile by tile, and bending it to sit on top of a modern street map. [Space] Hold a key and there is today's New Haven underneath. [release] And there is 1893 again.
 
 The tool doing that is called Allmaps. It is free and open source, it runs in a web browser, and it does one thing: it puts historical maps in their place on the earth. The process has a name, georeferencing, which used to belong to GIS specialists. Allmaps makes it something anyone in this room can do. Over the next twenty minutes I want to show you how it works, what it does to our collections, and why Yale has put its name behind it. Every map you will see is ours. [→]
 
@@ -22,7 +22,7 @@ The tool doing that is called Allmaps. It is free and open source, it runs in a 
 
 Here is the problem it solves. We have digitized thousands of maps and we publish them through IIIF, the image standard the whole field shares. That is a real achievement. But a digitized map is a picture of a map. This one is Amos Doolittle's plan of New Haven from 1817, dedicated to the mayor and aldermen. It is a beautiful scan, more than eleven thousand pixels across, and it has no idea where it is. You cannot lay it over today's streets, you cannot compare it with another map of the same place, and you cannot find it by searching for a place.
 
-Two numbers on the panel. Thirteen thousand two hundred and fifty-nine of our maps have IIIF manifests, which means every one of them is already loaded into Allmaps and ready to go. Sixty-two have been georeferenced so far. So the headroom is enormous, and the barrier is low: no software, no second copy of the image, nothing to store or preserve beyond what we already keep. The next four slides are the four steps in the Allmaps Editor, using this Doolittle map. [→]
+[H] Two numbers on the panel. Thirteen thousand two hundred and fifty-nine of our maps have IIIF manifests, which means every one of them is already loaded into Allmaps and ready to go. Sixty-two have been georeferenced so far. So the headroom is enormous, and the barrier is low: no software, no second copy of the image, nothing to store or preserve beyond what we already keep. The next four slides are the four steps in the Allmaps Editor, using this Doolittle map. [H] [→]
 
 ## 3 · Step 1: draw the mask (3:00)
 
@@ -52,7 +52,7 @@ I have drawn the map at 65 per cent so the streets show through. [Space] And und
 
 Step four is the one you do not do. There is no save button. Every edit is stored straight away as a Georeference Annotation: a few kilobytes of open JSON at a stable web address, which records three things, the IIIF image, the mask, and the points. That is the whole output. The image never moves; it stays on our server, under our control.
 
-That small file is what every Allmaps app reads to draw the map in place, and it is what makes the map findable by location, which is where this story ends up. Doolittle's annotation is linked on the panel if anyone wants to see what one looks like. Now, the maps. [→]
+That small file is what every Allmaps app reads to draw the map in place, and it is what makes the map findable by location, which is where this story ends up. [H] Doolittle's annotation is linked on the panel if anyone wants to see what one looks like. [H] Now, the maps. [→]
 
 ## 8 · New Haven, 1817 (7:30)
 
@@ -94,7 +94,7 @@ Paper removed, and this time the drawing colorized in Yale blue. The point of th
 
 ## 16 · 1911 (11:45)
 
-1911, the Saloon map of New Haven, made for one purpose: to plot where every saloon in the city stood. Eleven control points. Some of you will have seen this one already; it was the example in the partnership update I circulated, and the link on the panel opens it in the Viewer, where you can click the magic pen and do the next slide yourself. [→]
+1911, the Saloon map of New Haven, made for one purpose: to plot where every saloon in the city stood. Eleven control points. Some of you will have seen this one already; it was the example in the partnership update I circulated, and the link on the panel opens it in the Viewer, where you can click the magic pen and do the next slide yourself. [H to show the link, H again to hide] [→]
 
 ## 17 · 1911, paper removed (12:15)
 
@@ -146,7 +146,7 @@ Finally, scale in the other direction. A Mercator planisphere from about 1780, h
 
 So where are we now. Because our maps are delivered through IIIF, every one of them is already in Allmaps. You open the Yale organization page in the Editor, pick a map, and start placing points. Nothing to install, no account to create. Wherever one of our maps appears, it carries a Yale University Library badge with a link back to Digital Collections.
 
-Four apps, all in the browser. The Editor, which you have just seen in four slides. The Viewer, which opens any georeferenced map on a modern basemap with opacity, the magic pen and colorize as buttons. Here, which I would ask you to try on your phone when you leave: it shows the historical maps of wherever you are standing, and at the Beinecke it finds our New Haven maps beside Boston Public Library's and David Rumsey's. And Latest, a live stream of maps being georeferenced right now, by the Bodleian, the BnF, Texas A&M, the National Library of Scotland, and us.
+[H] Four apps, all in the browser. The Editor, which you have just seen in four slides. The Viewer, which opens any georeferenced map on a modern basemap with opacity, the magic pen and colorize as buttons. Here, which I would ask you to try on your phone when you leave: it shows the historical maps of wherever you are standing, and at the Beinecke it finds our New Haven maps beside Boston Public Library's and David Rumsey's. And Latest, a live stream of maps being georeferenced right now, by the Bodleian, the BnF, Texas A&M, the National Library of Scotland, and us.
 
 We have also been working with Julia Hernández at the Beinecke on using this in classroom teaching. The clip at the bottom is the four steps on the Hill map in the Editor, in one minute. [let the clip run if time allows] [→]
 
@@ -158,6 +158,6 @@ What the membership buys us is simple. Because our maps are IIIF, they sit in Al
 
 ## 30 · Start with a map you know (21:45)
 
-I will finish where we started, with a New Haven map. This is the 1883 Price, Lee map. The link opens it in the Editor so you can see exactly how it was done, and any map on Yale's organization page is one click from starting one of your own. The news article and the short video are on the panel, and every map you have seen tonight is in the Credits with its catalogue record.
+I will finish where we started, with a New Haven map. This is the 1883 Price, Lee map. The link opens it in the Editor so you can see exactly how it was done, and any map on Yale's organization page is one click from starting one of your own. [H] The news article and the short video are on the panel, and every map you have seen tonight is in the Credits with its catalogue record.
 
 Thank you. Questions, and if there is time I would much rather georeference a map in front of you than talk about it.

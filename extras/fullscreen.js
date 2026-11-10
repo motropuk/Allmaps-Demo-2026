@@ -1,10 +1,12 @@
-// Full-screen helper for the Allmaps at Yale Library deck.
-// Adds: full screen on clicking Start, an on-screen toggle button, and the F key.
+// Presenter helper for the Allmaps at Yale Library deck.
+// Adds: full screen on clicking Start, an on-screen toggle button, the F key,
+// and starts the deck with the text panel hidden (press H to show it).
 (function () {
-  var doc = document, root = doc.documentElement;
+  var doc = document;
   var isFull = function () { return !!(doc.fullscreenElement || doc.webkitFullscreenElement); };
   var enter = function () {
-    var req = root.requestFullscreen || root.webkitRequestFullscreen;
+    var root = doc.documentElement;
+    var req = root && (root.requestFullscreen || root.webkitRequestFullscreen);
     if (req && !isFull()) { try { var p = req.call(root); if (p && p.catch) p.catch(function () {}); } catch (e) {} }
   };
   var exit = function () {
@@ -56,4 +58,26 @@
     var el = e.target && e.target.closest ? e.target.closest('button, a') : null;
     if (el && el.id !== 'yale-fs' && /^\s*start\s*$/i.test(el.textContent || '')) enter();
   }, true);
+
+  // Start with the text panel hidden: once the slides are showing, press H for the
+  // presenter (retrying until the deck accepts it), then leave H to the presenter.
+  var startVisible = function () {
+    var screen = doc.querySelector('.start-screen');
+    return !!screen && screen.getAttribute('aria-hidden') !== 'true';
+  };
+  var pressH = function () {
+    window.dispatchEvent(new KeyboardEvent('keydown', { key: 'h', code: 'KeyH', bubbles: true }));
+    window.dispatchEvent(new KeyboardEvent('keyup', { key: 'h', code: 'KeyH', bubbles: true }));
+  };
+  var tries = 0, done = false, pressed = false;
+  var hidePanel = setInterval(function () {
+    if (done || tries > 12) return clearInterval(hidePanel);
+    var panel = doc.getElementById('slideshow-reading-panel');
+    if (!panel || startVisible()) return;
+    var hiddenNow = panel.getAttribute('aria-hidden') === 'true';
+    if (pressed && hiddenNow) { done = true; return clearInterval(hidePanel); }
+    if (!hiddenNow) { tries++; pressed = true; pressH(); }
+  }, 700);
+  // The presenter's own H press ends the automatic hiding.
+  doc.addEventListener('keydown', function (e) { if (e.isTrusted && (e.key === 'h' || e.key === 'H')) done = true; }, true);
 })();
