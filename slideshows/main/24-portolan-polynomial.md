@@ -15,9 +15,9 @@ warpedMaps:
       renderVectorsColor: "#ffffff"
       renderVectorsSize: 3
       transformationType: polynomial
-      opacity: 0.88
+      opacity: 0.6
 ---
 
-City plans are the easy case. This is a manuscript **portolan chart** of the Mediterranean from 1590, one of the Beinecke's. A portolan has no projection in the modern sense; it was drawn from compass bearings and distances.
+City plans are the easy case. This is a hand-drawn **portolan chart** of the Mediterranean from 1590, in the Beinecke's collection: a sea chart made by and for ships' navigators, built up from compass directions and sailing distances between harbours rather than from a grid of latitude and longitude. Its shape is recognisable, but out of true by different amounts in different places.
 
-The Editor's default fit, a **polynomial** transformation, is essentially a stretch and a rotation. The white lines show how far each of the eight control points lands from where it should be. The coastline cannot follow.
+The Editor's default fit moves, turns and stretches the whole sheet evenly. That suits an accurate city survey, but not this chart: the gaps between the pink and blue dots show it cannot line up with all eight points at once.

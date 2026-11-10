@@ -13,7 +13,7 @@ warpedMaps:
       renderTransformedGcpsColor: "#ff56ba"
       renderVectors: true
       transformationType: thinPlateSpline
-      opacity: 0.88
+      opacity: 0.6
 ---
 
-Switch the Editor to a **thin-plate spline** and the chart is warped smoothly through every control point. The white lines vanish and the coast settles onto the modern one. The transformation type is saved in the annotation, chosen map by map.
+Same chart, same eight points, one setting changed. Instead of stretching the sheet evenly, Allmaps now **bends** it, like a rubber sheet pinned down at each control point (in the Editor this is the *thin-plate spline* option). Every point lands where it was clicked, and the coastline settles much closer to today's. The choice of fit is made map by map and saved with the points.

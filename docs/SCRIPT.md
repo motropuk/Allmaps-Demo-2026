@@ -127,17 +127,17 @@ With the paper removed, you can see the positions of 1776 on today's Brooklyn an
 
 ## 24 · The portolan chart, polynomial (16:15)
 
-City plans are the easy case, so let me show you a hard one. This is a manuscript portolan chart of the Mediterranean from 1590, one of the Beinecke's. A portolan has no projection in the modern sense. It was drawn from compass bearings and distances, by pilots, for pilots.
+Let's go bigger again, to the whole Mediterranean. City plans are actually the easy case, so let me show you a hard one. This is a hand-drawn sea chart of the Mediterranean from 1590, in the Beinecke's collection. Charts like this are called portolan charts. They were made by ships' navigators, for other navigators, and they were not drawn the way modern maps are. There was no grid of latitude and longitude behind them. Instead they were built up from sailing directions: from this harbour, sail in this compass direction for this many miles and you reach that one. So the overall shape is recognisable, but it is out of true by different amounts in different places.
 
-The Editor's default fit is a polynomial, which is essentially a stretch and a rotation. The white lines show how far each of the eight control points lands from where it should be, and you can see the coastline simply cannot follow. [→]
+That matters for georeferencing. By default, the Editor fits a map by moving, turning and stretching the whole sheet evenly, rather like resizing a photograph so it lines up. For an accurate city survey that works well. For this chart it cannot, because the errors are different in different places. I have made the chart partly see-through so you can see the coastline underneath. [scroll to zoom in on a pair of dots] And you can see it in the gaps between the pink and blue dots: there is no way to line the chart up with all eight points at once. [→]
 
 ## 25 · The portolan chart, spline (17:00)
 
-Same chart, same eight points, and one change: the transformation is now a thin-plate spline, which bends the chart smoothly through every point. The white lines vanish and the coast settles onto the modern one. You choose the transformation in the Editor, map by map, and the choice is saved in the annotation. [→]
+So here is the same chart and the same eight points, with one setting changed in the Editor. Instead of stretching the whole sheet evenly, Allmaps now bends it, a bit like a rubber sheet pinned down at each control point. Each point lands exactly where it was clicked, and the parts in between bend smoothly to follow. The gaps disappear, and the coastline settles much closer to the modern one. You choose which kind of fit to use for each map in the Editor, and Allmaps remembers that choice along with the points. [→]
 
 ## 26 · Where the chart stretches (17:40)
 
-And the same fit shown a third way, as a distortion map. The tint measures how much each part of the chart had to be stretched or squeezed to pass through the control points. For a cartographic historian that is evidence, not decoration: it shows where a sixteenth-century pilot's bearings were reliable and where they were not. [→]
+Bending a map to fit is fine, as long as you can see how much bending it took, and Allmaps can show you that too. This is the same fit again, now coloured: one colour shows where the chart had to be stretched to fit, the other where it had to be squeezed. The stronger the colour, the more that part of the chart had to change. For a historian of cartography that is useful in its own right: it is a picture of where this chart departs most from modern geography. [→]
 
 ## 27 · The whole globe (18:15)
 
