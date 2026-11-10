@@ -14,4 +14,4 @@ warpedMaps:
       removeColor: false
 ---
 
-**1883.** Price, Lee & Co.'s map, surveyed by S. W. Searle for the city directory publishers. Four control points were enough for a sheet this regular.
+**1883.** Price, Lee & Co.'s map, surveyed by S. W. Searle for the city directory publishers. Placed with just four control points.

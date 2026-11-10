@@ -12,7 +12,7 @@ warpedMaps:
       colorize: false
 ---
 
-Yale joined the [Allmaps–IIIF Partnership](https://allmaps.org/iiif-partnership) as an inaugural Innovator-level member, and chairs its Advisory Board. Allmaps began in 2021 at TU Delft Library; the partnership, approved by the IIIF Executive Committee in October 2025, gives it a sustainable home inside the IIIF Consortium for 2026–28. Yale is listed on the [Allmaps partners page](https://allmaps.org/partners).
+Yale joined the [Allmaps–IIIF Partnership](https://allmaps.org/iiif-partnership) as an inaugural Innovator-level member, and Jon Manton, Director of Digital Collections and Access, chairs its Advisory Board. Allmaps began in 2021 at TU Delft Library; the partnership, approved by the IIIF Executive Committee in October 2025, gives it a sustainable home inside the IIIF Consortium for 2026–28. Yale is listed on the [Allmaps partners page](https://allmaps.org/partners).
 
 Because our maps are delivered through IIIF, they appear in Allmaps alongside map collections from institutions around the world, and every map that someone georeferences becomes open data that serves Yale and the wider research community.
 

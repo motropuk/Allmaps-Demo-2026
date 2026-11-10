@@ -80,7 +80,7 @@ Look along the shoreline. Compare the 1847 waterfront with today's and you can s
 
 ## 12 · 1883 (10:00)
 
-1883: Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. A sheet this regular needed only four control points. [→]
+1883: Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. This one was placed with just four control points. [→]
 
 ## 13 · 1883, paper removed (10:20)
 
@@ -165,7 +165,7 @@ And fourth, Latest: a live stream of maps being georeferenced in Allmaps right n
 
 ## 32 · Why Yale invested, and what is next (21:45)
 
-On screen now are all of Yale's georeferenced maps, across the world. Yale joined the Allmaps–IIIF Partnership as an inaugural Innovator-level member, and I chair its Advisory Board. Allmaps began at TU Delft Library in 2021. The partnership, approved by the IIIF Executive Committee last October, gives it a sustainable home inside the IIIF Consortium through 2028, and Yale is on the partners page.
+On screen now are all of Yale's georeferenced maps, across the world. Yale joined the Allmaps–IIIF Partnership as an inaugural Innovator-level member, and I chair its Advisory Board. Allmaps began at TU Delft Library in 2021. The partnership, approved by the IIIF Executive Committee in October 2025, gives it a sustainable home inside the IIIF Consortium through 2028, and Yale is on the partners page.
 
 What the membership buys us is simple. Because our maps are IIIF, they sit in Allmaps alongside collections from around the world, and every map someone georeferences becomes open data that serves Yale and everyone else. What is coming is the part I am most excited about. By the end of the year Allmaps plans a first version of Allmaps Explore. Think of it as Google Maps for historical maps: search for any place in the world and see every map of it that has been georeferenced, from any participating institution, in one view. That changes how our map collections are discovered. [→]
 
