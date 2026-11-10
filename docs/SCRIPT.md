@@ -45,7 +45,7 @@ Five pairs were enough for Doolittle. A more complicated map, or a detailed surv
 
 ## 6 · Step 3: the map is placed (5:30)
 
-Step three happens by itself. With the mask and the points, Allmaps warps the scan onto the modern map. The blue dots are the control points on today's map, and the pink dots are where the warped scan puts them. The white lines join each pair: they show the gap between where a point was clicked and where the warped map actually puts it. A short line means a good fit. [point to a longer line] Where you see a bit of a gap, like this one, the fit is slightly off at that point.
+Step three happens by itself. With the mask and the points, Allmaps warps the scan onto the modern map. The blue dots are the control points on today's map, and the pink dots are where the warped scan puts them. The white lines join each pair: they show the gap between where a point was clicked and where the warped map actually puts it. A short line means a good fit, and on Doolittle they are so short you can barely see them. [scroll to zoom in on a pair of dots] If I zoom in on one, you can see the small gap.
 
 This is the view the Editor gives you on its Results step, so you can see at a glance whether a point needs moving. [Space] Hold Space and you can see the streets it is lying on. [release] The Nine Squares have not moved in two hundred years. [→]
 
