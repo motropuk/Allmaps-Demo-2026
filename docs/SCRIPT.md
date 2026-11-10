@@ -6,7 +6,7 @@ Read-aloud narrative for the 33-slide story at https://motropuk.github.io/Allmap
 
 - **→ / ←**: next / previous slide. Cue in the notes: **[→]**
 - **Space (press and hold)**: hides the historic map so today's map shows underneath; let go to bring it back. Cues: **[Space]** … **[release]**
-- **H**: show or hide the text panel. The panel starts hidden, so the maps fill the screen; press H when you want the audience to read the panel or click a link in it. Cue: **[H]**
+- **H**: show or hide the text panel. The panel shows when the deck starts: press **H** on slide 1 to hide it so the maps fill the screen, and **H** again at slide 27 to bring it back for the rest. Cue: **[H]**
 - **Esc**: close the text panel
 - **I**: show or hide the source information for the map on screen, as in the Allmaps Viewer (or click the title strip at the top). **Esc** closes it. Cue: **[press I]**
 - **Full screen**: happens automatically when you click **Start**. To leave or re-enter, click the full-screen button under the title (top left) or press **F**.
@@ -16,7 +16,7 @@ Read-aloud narrative for the 33-slide story at https://motropuk.github.io/Allmap
 
 ## 1 · Every digitized map, put back on the ground (0:00)
 
-Hi everyone and thank you for coming. Let's just start by looking at some maps, because that is really what we are here to do. What you are looking at is one of Yale Library's maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image you are seeing directly from our own Digital Collections server, right now, tile by tile, and bending it to sit on top of a modern street map. [Space] If I hold Space, there is the modern street map underneath, which uses OpenStreetMap data. [release] [scroll to zoom out] And if I zoom out, you can see the historic map lying over the top of the modern one. [scroll back in]
+[H to hide the panel] Hi everyone and thank you for coming. Let's just start by looking at some maps, because that is really what we are here to do. What you are looking at is one of Yale Library's maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image you are seeing directly from our own Digital Collections server, right now, tile by tile, and bending it to sit on top of a modern street map. [Space] If I hold Space, there is the modern street map underneath, which uses OpenStreetMap data. [release] [scroll to zoom out] And if I zoom out, you can see the historic map lying over the top of the modern one. [scroll back in]
 
 The tool doing this is called Allmaps. It is free and open source, it runs in a web browser, and it does one thing: it puts historical maps in their place geographically. This process is called georeferencing, and Allmaps makes georeferencing something anyone in this room could do. Over the next twenty minutes I want to show you how it works, what it does for our collections, and why Yale has put its name behind it. Every one of the maps you are going to see today is from our collections. [→]
 
@@ -143,13 +143,13 @@ Bending a map to fit is fine, as long as you can see how much bending it took, a
 
 ## 27 · Yale's maps in Allmaps (18:15)
 
-So where are we now? [H] Everything on screen is one of Yale's maps, georeferenced in Allmaps and shown together: here, our maps of Connecticut and New England layered on top of one another. [scroll to zoom out] Zoom out and you find the rest, from New Orleans to Florence.
+So where are we now? [H to show the panel] Everything on screen is one of Yale's maps, georeferenced in Allmaps and shown together: here, our maps of Connecticut and New England layered on top of one another. [scroll to zoom out, across to Europe] Zoom out and you find the rest, from New Orleans to Florence.
 
-We have roughly thirteen thousand two hundred and fifty-nine digitized maps with IIIF manifests, and we have recently loaded every one of them into Allmaps. Sixty-two have been georeferenced so far. So there is a lot still to do: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. And wherever one of our maps appears in Allmaps, it carries a Yale University Library badge with a link back to Digital Collections. Let me show you the four Allmaps apps, live. [→]
+We have roughly thirteen thousand two hundred and fifty-nine digitized maps with IIIF manifests, and we have recently loaded every one of them into Allmaps. Sixty-two have been georeferenced so far. So there is a lot still to do: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. And wherever one of our maps appears in Allmaps, it carries a Yale University Library badge with a link back to Digital Collections. So that is where Yale's maps stand. Now let me show you the four apps that make up Allmaps, live. [→]
 
 ## 28 · Allmaps Editor (19:15)
 
-First, the Editor, which you have already seen at work. This is Yale's organization page in it, live: every Yale map that Allmaps knows about. [scroll inside the window] You pick a map and start placing points. Nothing to install, no account to create. I have also been talking with Julia Hernández at the Beinecke about how we might use this in classroom teaching. The clip on the right is the four steps on the Hill map, in one minute. [play the clip if time allows] [move the pointer off the window] [→]
+First, the Editor, which you have already seen at work. This is Yale's organization page in it, live: every Yale map that Allmaps knows about. [scroll inside the window] You pick a map and start placing points. Nothing to install, no account to create. I have also been talking with Julia Hernández at the Beinecke about how we might use this in classroom teaching. [play the clip on the panel] This clip is the four steps on the Hill map, the one from the very first slide, sped up to a minute: the mask, then the control points on each side, then the result. [move the pointer off the window] [→]
 
 ## 29 · Allmaps Viewer (20:00)
 
@@ -161,13 +161,13 @@ Third, Here, which I would ask you all to try on your phones. It shows you the h
 
 ## 31 · Allmaps Latest (21:15)
 
-And fourth, Latest: a live stream of maps being georeferenced in Allmaps right now, around the world. When someone georeferences one of our maps, it turns up here. [→]
+And fourth, Latest: a live stream of maps being georeferenced in Allmaps right now, around the world. When someone georeferences one of our maps, it turns up here. [point to the most recent entries] You can see how often this happens. [→]
 
 ## 32 · Why Yale invested, and what is next (21:45)
 
 On screen now are all of Yale's georeferenced maps, across the world. Yale joined the Allmaps–IIIF Partnership as an inaugural Innovator-level member, and I chair its Advisory Board. Allmaps began at TU Delft Library in 2021. The partnership, approved by the IIIF Executive Committee last October, gives it a sustainable home inside the IIIF Consortium through 2028, and Yale is on the partners page.
 
-What the membership buys us is simple. Because our maps are IIIF, they sit in Allmaps alongside collections from around the world, and every map someone georeferences becomes open data that serves Yale and everyone else. What is coming is the part I am most excited about. By the end of the year Allmaps plans a first version of Allmaps Explore. Think of it as Google Maps for historical maps: search for any place in the world and see every map of it that has been georeferenced, from any participating institution, in one view. That changes how our map collections are discovered, and partner dashboards will show us how they are being used. [→]
+What the membership buys us is simple. Because our maps are IIIF, they sit in Allmaps alongside collections from around the world, and every map someone georeferences becomes open data that serves Yale and everyone else. What is coming is the part I am most excited about. By the end of the year Allmaps plans a first version of Allmaps Explore. Think of it as Google Maps for historical maps: search for any place in the world and see every map of it that has been georeferenced, from any participating institution, in one view. That changes how our map collections are discovered. [→]
 
 ## 33 · Start with a map you know (23:00)
 
