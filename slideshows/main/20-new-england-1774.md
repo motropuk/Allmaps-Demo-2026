@@ -10,4 +10,4 @@ warpedMaps:
       opacity: 0.92
 ---
 
-The method does not care about scale. Thomas Jefferys's 1774 *Map of the most inhabited part of New England*, at roughly 1:443,000, draped over three states on eleven control points.
+The same method works at any scale. Thomas Jefferys's 1774 *Map of the most inhabited part of New England* covers a whole region rather than a city, and eleven control points are enough to lay it across three states.

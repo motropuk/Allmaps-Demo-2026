@@ -17,4 +17,4 @@ warpedMaps:
       opacity: 1
 ---
 
-Paper removed: the 1776 positions on the Brooklyn and Manhattan of today.
+Paper removed: the 1776 positions on the Brooklyn and Manhattan of today. A hand-drawn map will not line up exactly with modern mapping, but laid over it you can see roughly where things were and compare places in a way the flat scan does not allow.

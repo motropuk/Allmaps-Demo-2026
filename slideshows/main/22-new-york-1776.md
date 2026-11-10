@@ -14,4 +14,4 @@ warpedMaps:
       removeColor: false
 ---
 
-William Faden's *Plan of New York Island*, dated 19 October 1776 and drawn within weeks of the Battle of Brooklyn. Its printed references mark the British and American positions. In its proper place on the ground those positions stop being illustrations and become locations you can measure between.
+William Faden's *Plan of New York Island*, dated 19 October 1776 and drawn within weeks of the Battle of Brooklyn. Its printed references mark the British and American positions.

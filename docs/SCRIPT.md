@@ -111,19 +111,19 @@ Paper removed again. Step back through these six and what you have is a fixed fr
 
 ## 20 · From the city to the colony (13:45)
 
-The method does not care about scale. This is Thomas Jefferys's 1774 map of the most inhabited part of New England, at roughly one to four hundred thousand, draped over three states on eleven control points. Printed the year before Lexington. [→]
+Let's zoom out a bit further, because this method does not really care about scale. This is Thomas Jefferys's 1774 map of the most inhabited part of New England. It covers a whole region rather than a single city, and eleven control points are enough to lay it across three states. [→]
 
 ## 21 · Find New Haven (14:30)
 
-And we fly down the coast to our own harbour, on that same sheet. [Space] Hold and compare the engraved shoreline with today's. [release] For a map at this scale, placed with eleven points, that is a remarkably good fit. [→]
+And if we fly down the coast to our own harbour, on that same sheet, [Space] you can hold and compare the engraved shoreline with today's. [release] It does not match exactly, and we should not expect it to: this was drawn by hand in the eighteenth century. But for a regional map placed with just eleven points, it is a pretty good fit overall. [→]
 
 ## 22 · New York, October 1776 (15:15)
 
-One more from the same decade. William Faden's Plan of New York Island, dated 19 October 1776, drawn within weeks of the Battle of Brooklyn. The printed references mark the British and American positions. [→]
+One more from the same decade. This is William Faden's Plan of New York Island, dated 19 October 1776 and drawn within weeks of the Battle of Brooklyn. The printed references mark the British and American positions. [→]
 
 ## 23 · 1776, paper removed (15:45)
 
-Paper removed: the positions of 1776 on the Brooklyn and Manhattan of today. In their proper place on the ground those positions stop being illustrations and become locations you can measure between. For anyone teaching with the Beinecke's early American material, that is a different kind of object. [→]
+With the paper removed, you can see the positions of 1776 on today's Brooklyn and Manhattan. Some of it will not line up exactly, and it is worth being clear about that: these are hand-drawn maps, and Allmaps is making a good attempt to connect them to modern mapping, not claiming they are precise. What it does give you is a way to see roughly where things were and to compare places in a way the flat scan never could. For anyone teaching with the Beinecke's early American material, that is a really useful thing to have. [→]
 
 ## 24 · The portolan chart, polynomial (16:15)
 
