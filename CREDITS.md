@@ -17,7 +17,6 @@ All maps are served from [Yale Digital Collections](https://collections.library.
 - [*A map of the most inhabited part of New England*, Thomas Jefferys, 1774](https://collections.library.yale.edu/catalog/15604207). Beinecke Library, 76 1774.
 - [*A plan of New York Island, with part of Long Island, Staten Island & east New Jersey*, William Faden, 19 October 1776](https://collections.library.yale.edu/catalog/15761111). Beinecke Library, 771 N49 1776K.
 - [*Portolan chart of the Mediterranean Sea and Europe*, 1590](https://collections.library.yale.edu/catalog/16538131). Beinecke Library, Manuscript 49cea 1590.
-- [*Planisphere suivant la projection de Mercator*, c.1780](https://collections.library.yale.edu/catalog/15830562). Sterling Memorial Library, 11 1780.
 - [*Western section of Long Island Sound: oyster grounds, State of Connecticut*, 1889](https://collections.library.yale.edu/catalog/15675153). Beinecke Library, 766GD 1889.
 
 Georeference annotations: [annotations.allmaps.org](https://annotations.allmaps.org), published under CC0 by their contributors.
@@ -34,3 +33,5 @@ Georeference annotations: [annotations.allmaps.org](https://annotations.allmaps.
 Basemap: [Protomaps](https://protomaps.com) (OpenStreetMap contributors).
 
 Slides 2–9 use a copy of Doolittle's Georeference Annotation ([annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974), CC0) with the same control points and the mask redrawn around the Nine Squares (York, Grove, State and George Streets; corners located from OpenStreetMap data, © OpenStreetMap contributors, ODbL). The copy is in `assets/annotations/doolittle-nine-squares.json`.
+
+Slides 27 and 32 draw all of Yale University Library's georeferenced maps together from `assets/annotations/yale-all.json`, compiled on 10 November 2026 from the Allmaps annotations for the Yale organization's manifests (Allmaps API), excluding three world- or continent-scale maps.

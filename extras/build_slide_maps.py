@@ -10,7 +10,9 @@ slides = []
 for f in sorted(glob.glob('slideshows/main/*.md')):
     name = os.path.basename(f)[:-3]
     slug = re.sub(r'^\d+-', '', name)
-    fm = open(f, encoding='utf-8').read().split('---')[1]
+    text = open(f, encoding='utf-8').read()
+    fm = text.split('---')[1]
+    embed = re.search(r'<!--\s*embed:\s*(\S+)\s*-->', text)
     maps = []
     for block in re.split(r'\n  - ', fm.split('warpedMaps:', 1)[1] if 'warpedMaps:' in fm else '')[1:]:
         def field(k):
@@ -27,6 +29,6 @@ for f in sorted(glob.glob('slideshows/main/*.md')):
             'homepage': homepage,
             'manifest': f'https://collections.library.yale.edu/manifests/{oid.group(1)}' if oid else None,
         })
-    slides.append({'slug': slug, 'maps': maps})
+    slides.append({'slug': slug, 'maps': maps, 'embed': embed.group(1) if embed else None})
 json.dump({'slides': slides}, open(out, 'w'), indent=1)
 print(f'{out}: {len(slides)} slides, {sum(1 for s in slides if s["maps"])} with maps')

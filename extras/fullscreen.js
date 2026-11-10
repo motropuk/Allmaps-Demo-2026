@@ -1,7 +1,8 @@
 // Presenter helper for the Allmaps at Yale Library deck.
 // Adds: full screen on clicking Start, an on-screen toggle button, the F key,
 // starts the deck with the text panel hidden (press H to show it), and shows an
-// Allmaps Viewer-style source header for the map on each slide (click it, or press I).
+// Allmaps Viewer-style source header for the map on each slide (click it, or press I),
+// and shows a live Allmaps app in a window on slides marked <!-- embed: URL -->.
 (function () {
   var doc = document;
   var SCRIPT_SRC = (doc.currentScript && doc.currentScript.src) || '';
@@ -182,4 +183,67 @@
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', mountSrc); else mountSrc();
   window.addEventListener('hashchange', update);
   setInterval(mountSrc, 700);
+
+  // ---- Live app windows ----------------------------------------------------
+  var appCss = doc.createElement('style');
+  appCss.textContent =
+    '#yale-app{position:fixed;z-index:2147481000;display:none;flex-direction:column;background:#fff;border-radius:14px;overflow:hidden;' +
+    'box-shadow:0 12px 40px rgba(0,0,0,.35);border:1px solid rgba(0,0,0,.12)}' +
+    '#yale-app .bar{flex:none;display:flex;align-items:center;gap:10px;padding:8px 12px;background:#f1f3f4;border-bottom:1px solid #ddd;' +
+    'font:13px/1 system-ui,-apple-system,"Segoe UI",sans-serif;color:#333}' +
+    '#yale-app .dots{display:flex;gap:6px}#yale-app .dots i{width:11px;height:11px;border-radius:50%;background:#ccc;display:block}' +
+    '#yale-app .dots i:nth-child(1){background:#ff5f57}#yale-app .dots i:nth-child(2){background:#febc2e}#yale-app .dots i:nth-child(3){background:#28c840}' +
+    '#yale-app .url{flex:1;min-width:0;background:#fff;border-radius:999px;padding:6px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#555}' +
+    '#yale-app a{color:#00356b;font-weight:600;text-decoration:none;white-space:nowrap}' +
+    '#yale-app iframe{flex:1;width:100%;border:0;background:#fff}' +
+    '#yale-sink{position:fixed;left:-9999px;top:0;width:1px;height:1px}';
+  var app = doc.createElement('div'); app.id = 'yale-app';
+  app.innerHTML = '<div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"></span><a target="_blank" rel="noopener">Open &#8599;</a></div>';
+  var sink = doc.createElement('button'); sink.id = 'yale-sink'; sink.tabIndex = -1; sink.setAttribute('aria-hidden', 'true');
+  var frames = {};
+  var currentSlide = function () {
+    if (!slideMaps || !slideMaps.slides) return null;
+    var slug = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+    for (var i = 0; i < slideMaps.slides.length; i++) if (slideMaps.slides[i].slug === slug) return slideMaps.slides[i];
+    return slug ? null : slideMaps.slides[0];
+  };
+  var place = function () {
+    var panel = doc.getElementById('slideshow-reading-panel');
+    var open = panel && panel.getAttribute('aria-hidden') !== 'true';
+    var right = 24;
+    if (open) {
+      var box = (panel.closest('aside, section, [class*="panel"]') || panel).getBoundingClientRect();
+      if (box.width > 0 && box.left > window.innerWidth * 0.3) right = Math.max(24, window.innerWidth - box.left + 16);
+    }
+    app.style.left = '24px'; app.style.top = '62px'; app.style.bottom = '96px'; app.style.right = right + 'px';
+  };
+  var showApp = function () {
+    var slide = currentSlide();
+    var url = slide && slide.embed;
+    if (!url || startVisible()) { app.style.display = 'none'; return; }
+    Object.keys(frames).forEach(function (k) { frames[k].style.display = k === url ? 'block' : 'none'; });
+    if (!frames[url]) {
+      var f = doc.createElement('iframe');
+      f.src = url; f.title = url; f.allow = 'geolocation; fullscreen; clipboard-write'; f.loading = 'eager';
+      frames[url] = f; app.appendChild(f);
+    }
+    app.querySelector('.url').textContent = url.replace(/^https?:\/\//, '');
+    app.querySelector('a').href = url;
+    place(); app.style.display = 'flex';
+  };
+  // Keep the keyboard with the slides unless the pointer is inside the app window.
+  var pointerInApp = false;
+  app.addEventListener('mouseenter', function () { pointerInApp = true; });
+  app.addEventListener('mouseleave', function () { pointerInApp = false; if (doc.activeElement && doc.activeElement.tagName === 'IFRAME') sink.focus(); });
+  setInterval(function () {
+    if (!pointerInApp && doc.activeElement && doc.activeElement.tagName === 'IFRAME') sink.focus();
+  }, 300);
+  var mountApp = function () {
+    if (!doc.getElementById('yale-app')) { doc.head.appendChild(appCss); doc.body.appendChild(app); doc.body.appendChild(sink); }
+    showApp();
+  };
+  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', mountApp); else mountApp();
+  window.addEventListener('hashchange', showApp);
+  window.addEventListener('resize', place);
+  setInterval(mountApp, 500);
 })();

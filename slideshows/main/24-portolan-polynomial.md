@@ -18,6 +18,6 @@ warpedMaps:
       opacity: 0.6
 ---
 
-City plans are the easy case. This is a hand-drawn **portolan chart** of the Mediterranean from 1590, in the Beinecke's collection: a sea chart made by and for ships' navigators, built up from compass directions and sailing distances between harbours rather than from a grid of latitude and longitude. Its shape is recognisable, but out of true by different amounts in different places.
+City plans are the easy case. This is a hand-drawn **portolan chart** of the Mediterranean from 1590, in the Beinecke's collection: a sea chart made by and for ships' navigators, built up from compass directions and sailing distances between harbours rather than from a grid of latitude and longitude. Its shape is recognisable, but its accuracy varies from place to place: some stretches of coast are close, others are well off.
 
 The Editor's default fit moves, turns and stretches the whole sheet evenly. That suits an accurate city survey, but not this chart: the gaps between the pink and blue dots show it cannot line up with all eight points at once.

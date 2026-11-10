@@ -1,22 +1,15 @@
 ---
 title: Why Yale invested, and what is next
-location:
-  center: [-72.93, 41.30]
-  zoom: 13.6
-  duration: 3000
+fit: contain
 warpedMaps:
-  - url: https://annotations.allmaps.org/maps/eb1bcd302edd84f8
-    caption: "City of New Haven, Connecticut, A.B. Hill, c.1893"
-    provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
-    homepage: https://collections.library.yale.edu/catalog/15675132
+  - path: annotations/yale-all.json
+    caption: "Yale University Library's georeferenced maps"
+    provenance: "Yale University Library"
+    homepage: https://editor.allmaps.org/organizations/yale
     options:
-      removeColor: true
-      removeColorColor: "#c0b0a0"
-      removeColorThreshold: 0.22
-      removeColorHardness: 0.5
-      opacity: 1
-      colorize: true
-      colorizeColor: "#00356b"
+      opacity: 0.95
+      removeColor: false
+      colorize: false
 ---
 
 Yale joined the [Allmaps–IIIF Partnership](https://allmaps.org/iiif-partnership) as an inaugural Innovator-level member, and chairs its Advisory Board. Allmaps began in 2021 at TU Delft Library; the partnership, approved by the IIIF Executive Committee in October 2025, gives it a sustainable home inside the IIIF Consortium for 2026–28. Yale is listed on the [Allmaps partners page](https://allmaps.org/partners).

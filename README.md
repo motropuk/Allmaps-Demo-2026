@@ -1,6 +1,6 @@
 # Allmaps at Yale Library
 
-A Yale Library staff demonstration of [Allmaps](https://allmaps.org) and the Allmaps–IIIF Partnership, told with maps from [Yale Digital Collections](https://collections.library.yale.edu). Thirty map slides, from a scan of Doolittle's 1817 plan of New Haven through a century of city maps, a 1590 portolan chart and a 1780 planisphere, to what the partnership means for Yale.
+A Yale Library staff demonstration of [Allmaps](https://allmaps.org) and the Allmaps–IIIF Partnership, told with maps from [Yale Digital Collections](https://collections.library.yale.edu). Map slides from a scan of Doolittle's 1817 plan of New Haven through a century of city maps and a 1590 portolan chart, to what the partnership means for Yale.
 
 Built with [Allmaps Slides](https://github.com/allmaps/slides) from the [slides template](https://github.com/allmaps/slides-template). Each slide is a Markdown file in `slideshows/main/` with its map settings in YAML frontmatter; `slides.config.yml` holds the project settings; `CREDITS.md` lists every map, its catalogue record and the sources for the figures quoted.
 
@@ -29,4 +29,4 @@ The original text and configuration in this repository are released under CC0 1.
 
 ## Presenter helper
 
-`extras/fullscreen.js` is injected into every page at build time (see the workflow). Clicking **Start** enters full screen; a button under the title and the **F** key toggle it. The deck also opens with the text panel hidden so the maps fill the screen; **H** shows and hides it. On every map slide a strip at the top names the map and its provider, as in the Allmaps Viewer; clicking it or pressing **I** opens the source information (catalogue details from the Yale IIIF manifest, with links to the Yale Digital Collections record and the Allmaps Viewer). `extras/build_slide_maps.py` writes the slide-to-map index it reads.
+`extras/fullscreen.js` is injected into every page at build time (see the workflow). Clicking **Start** enters full screen; a button under the title and the **F** key toggle it. The deck also opens with the text panel hidden so the maps fill the screen; **H** shows and hides it. On slides marked `<!-- embed: URL -->` (28–31) it shows that Allmaps app live in a window. On every map slide a strip at the top names the map and its provider, as in the Allmaps Viewer; clicking it or pressing **I** opens the source information (catalogue details from the Yale IIIF manifest, with links to the Yale Digital Collections record and the Allmaps Viewer). `extras/build_slide_maps.py` writes the slide-to-map index it reads.

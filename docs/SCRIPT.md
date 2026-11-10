@@ -1,6 +1,6 @@
 # Allmaps at Yale Library — speaker notes
 
-Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmaps-Demo-2026/. One section per slide. The panel on each slide carries the facts for the audience; these notes are what you say, with cues in square brackets for when to act. About 22 minutes.
+Read-aloud narrative for the 33-slide story at https://motropuk.github.io/Allmaps-Demo-2026/. One section per slide. The panel on each slide carries the facts for the audience; these notes are what you say, with cues in square brackets for when to act. About 23 minutes.
 
 ## Keys
 
@@ -11,6 +11,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 - **I**: show or hide the source information for the map on screen, as in the Allmaps Viewer (or click the title strip at the top). **Esc** closes it. Cue: **[press I]**
 - **Full screen**: happens automatically when you click **Start**. To leave or re-enter, click the full-screen button under the title (top left) or press **F**.
 - **Mouse**: drag to move the map, scroll to zoom. Cue: **[scroll to zoom]**
+- **Live app windows (slides 28–31)**: the Editor, Viewer, Here and Latest run live; you can click and scroll inside them. Move the pointer off the window before pressing **→**. Cue: **[move the pointer off the window]**
 - **If a map ever comes up blank**: **Cmd + Shift + R** reloads on the same slide.
 
 ## 1 · Every digitized map, put back on the ground (0:00)
@@ -127,9 +128,9 @@ With the paper removed, you can see the positions of 1776 on today's Brooklyn an
 
 ## 24 · The portolan chart, polynomial (16:15)
 
-Let's go bigger again, to the whole Mediterranean. City plans are actually the easy case, so let me show you a hard one. This is a hand-drawn sea chart of the Mediterranean from 1590, in the Beinecke's collection. Charts like this are called portolan charts. They were made by ships' navigators, for other navigators, and they were not drawn the way modern maps are. There was no grid of latitude and longitude behind them. Instead they were built up from sailing directions: from this harbour, sail in this compass direction for this many miles and you reach that one. So the overall shape is recognisable, but it is out of true by different amounts in different places.
+Let's go bigger again, to the whole Mediterranean. City plans are actually the easy case, so let me show you a hard one. This is a hand-drawn sea chart of the Mediterranean from 1590, in the Beinecke's collection. Charts like this are called portolan charts. They were made by ships' navigators, for other navigators, and they were not drawn the way modern maps are. There was no grid of latitude and longitude behind them. Instead they were built up from sailing directions: from this harbour, sail in this compass direction for this many miles and you reach that one. So the overall shape is recognisable, but its accuracy varies from place to place: some stretches of coast are close, others are well off.
 
-That matters for georeferencing. By default, the Editor fits a map by moving, turning and stretching the whole sheet evenly, rather like resizing a photograph so it lines up. For an accurate city survey that works well. For this chart it cannot, because the errors are different in different places. I have made the chart partly see-through so you can see the coastline underneath. [scroll to zoom in on a pair of dots] And you can see it in the gaps between the pink and blue dots: there is no way to line the chart up with all eight points at once. [→]
+That matters for georeferencing. By default, the Editor fits a map by moving, turning and stretching the whole sheet evenly, rather like resizing a photograph so it lines up. For an accurate city survey that works well. For this chart it cannot, because the errors are different in different places. I have made the chart partly see-through so you can compare its coastline with the modern one underneath. [scroll to zoom in on a pair of pink and blue dots] And if I zoom in, you can see the gaps between the pink and blue dots: there is no way to line the chart up with all eight points at once. [→]
 
 ## 25 · The portolan chart, spline (17:00)
 
@@ -139,26 +140,37 @@ So here is the same chart and the same eight points, with one setting changed in
 
 Bending a map to fit is fine, as long as you can see how much bending it took, and Allmaps can show you that too. This is the same fit again, now coloured: one colour shows where the chart had to be stretched to fit, the other where it had to be squeezed. The stronger the colour, the more that part of the chart had to change. For a historian of cartography that is useful in its own right: it is a picture of where this chart departs most from modern geography. [→]
 
-## 27 · The whole globe (18:15)
 
-Finally, scale in the other direction. A Mercator planisphere from about 1780, held at Sterling, placed with sixty control points and draped around the planet. [drag the globe] The reason I include it is to make the point that this is not only a tool for nineteenth-century city surveys. It works for the early-modern material this library collects at depth. [→]
+## 27 · Yale's maps in Allmaps (18:15)
 
-## 28 · Yale's maps, ready to use (18:45)
+So where are we now? [H] Everything on screen is one of Yale's maps, georeferenced in Allmaps and shown together: here, our maps of Connecticut and New England layered on top of one another. [scroll to zoom out] Zoom out and you find the rest, from New Orleans to Florence.
 
-So where are we now. [H] We have roughly thirteen thousand two hundred and fifty-nine digitized maps in our collections with IIIF manifests, and we have recently loaded every one of them into Allmaps. Sixty-two have been georeferenced so far by someone using Allmaps. So there is a lot of content still to georeference: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. Because our maps are delivered through IIIF, every one of them is already in Allmaps. You open the Yale organization page in the Editor, pick a map, and start placing points. Nothing to install, no account to create. Wherever one of our maps appears, it carries a Yale University Library badge with a link back to Digital Collections.
+We have roughly thirteen thousand two hundred and fifty-nine digitized maps with IIIF manifests, and we have recently loaded every one of them into Allmaps. Sixty-two have been georeferenced so far. So there is a lot still to do: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. And wherever one of our maps appears in Allmaps, it carries a Yale University Library badge with a link back to Digital Collections. Let me show you the four Allmaps apps, live. [→]
 
-Four apps, all in the browser. The Editor, which you have just seen in four slides. The Viewer, which opens any georeferenced map on a modern basemap with opacity, the magic pen and colorize as buttons. Here, which I would ask you to try on your phone when you leave: it shows the historical maps of wherever you are standing, and at the Beinecke it finds our New Haven maps beside Boston Public Library's and David Rumsey's. And Latest, a live stream of maps being georeferenced right now, by the Bodleian, the BnF, Texas A&M, the National Library of Scotland, and us.
+## 28 · Allmaps Editor (19:15)
 
-We have also been working with Julia Hernández at the Beinecke on using this in classroom teaching. The clip at the bottom is the four steps on the Hill map in the Editor, in one minute. [let the clip run if time allows] [→]
+First, the Editor, which you have already seen at work. This is Yale's organization page in it, live: every Yale map that Allmaps knows about. [scroll inside the window] You pick a map and start placing points. Nothing to install, no account to create. I have also been talking with Julia Hernández at the Beinecke about how we might use this in classroom teaching. The clip on the right is the four steps on the Hill map, in one minute. [play the clip if time allows] [move the pointer off the window] [→]
 
-## 29 · Why Yale invested, and what is next (20:15)
+## 29 · Allmaps Viewer (20:00)
 
-Yale joined the Allmaps–IIIF Partnership as an inaugural Innovator-level member, and I chair its Advisory Board. Allmaps began at TU Delft Library in 2021. The partnership, approved by the IIIF Executive Committee last October, gives it a sustainable home inside the IIIF Consortium through 2028, and Yale is on the partners page.
+Second, the Viewer: where anyone can look at a georeferenced map. This is the Saloon map, live. [click the magic pen icon at the bottom of the window] Here is the magic pen you saw earlier, and next to it the opacity control. [click the title strip at the top of the window] And this is the source information, with the link back to the record in Yale Digital Collections. [move the pointer off the window] [→]
+
+## 30 · Allmaps Here (20:45)
+
+Third, Here, which I would ask you all to try on your phones. It shows you the historical maps of wherever you are standing. [point to the QR code] Scan this code, and on campus it will find our New Haven maps alongside maps from other collections, such as Boston Public Library and the David Rumsey Map Collection. [→]
+
+## 31 · Allmaps Latest (21:15)
+
+And fourth, Latest: a live stream of maps being georeferenced in Allmaps right now, around the world. When someone georeferences one of our maps, it turns up here. [→]
+
+## 32 · Why Yale invested, and what is next (21:45)
+
+On screen now are all of Yale's georeferenced maps, across the world. Yale joined the Allmaps–IIIF Partnership as an inaugural Innovator-level member, and I chair its Advisory Board. Allmaps began at TU Delft Library in 2021. The partnership, approved by the IIIF Executive Committee last October, gives it a sustainable home inside the IIIF Consortium through 2028, and Yale is on the partners page.
 
 What the membership buys us is simple. Because our maps are IIIF, they sit in Allmaps alongside collections from around the world, and every map someone georeferences becomes open data that serves Yale and everyone else. What is coming is the part I am most excited about. By the end of the year Allmaps plans a first version of Allmaps Explore. Think of it as Google Maps for historical maps: search for any place in the world and see every map of it that has been georeferenced, from any participating institution, in one view. That changes how our map collections are discovered, and partner dashboards will show us how they are being used. [→]
 
-## 30 · Start with a map you know (21:45)
+## 33 · Start with a map you know (23:00)
 
-I will finish where we started, with a New Haven map. This is the 1883 Price, Lee map. The link opens it in the Editor so you can see exactly how it was done, and any map on Yale's organization page is one click from starting one of your own. [H] The news article and the short video are on the panel, and every map you have seen tonight is in the Credits with its catalogue record.
+I will finish where we started, with a New Haven map. This is the 1883 Price, Lee map. The link on the panel opens it in the Editor so you can see exactly how it was done, and any map on Yale's organization page is one click from starting one of your own. The news article and the short video are on the panel too, and every map you have seen today is in the Credits with its catalogue record.
 
 Thank you. Questions, and if there is time I would much rather georeference a map in front of you than talk about it.
