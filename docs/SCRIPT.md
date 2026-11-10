@@ -14,7 +14,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 
 ## 1 · Every digitized map, put back on the ground (0:00)
 
-Good morning, and thank you for coming. I want to start with the picture rather than the pitch. What you are looking at is one of our maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image from our own Digital Collections server right now, tile by tile, and bending it to sit on top of a modern street map. [Space] Hold a key and there is today's New Haven underneath. [release] And there is 1893 again.
+Hi everyone and thank you for coming. I want to start with the picture rather than the pitch. What you are looking at is one of our maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image from our own Digital Collections server right now, tile by tile, and bending it to sit on top of a modern street map. [Space] Hold a key and there is today's New Haven underneath. [release] And there is 1893 again.
 
 The tool doing that is called Allmaps. It is free and open source, it runs in a web browser, and it does one thing: it puts historical maps in their place on the earth. The process has a name, georeferencing, which used to belong to GIS specialists. Allmaps makes it something anyone in this room can do. Over the next twenty minutes I want to show you how it works, what it does to our collections, and why Yale has put its name behind it. Every map you will see is ours. [→]
 
