@@ -20,16 +20,6 @@ warpedMaps:
       colorize: false
 ---
 
-Yale has digitized thousands of maps and publishes them through IIIF, the standard that lets images be viewed and shared across institutions. But a digitized map is a picture of a map. This is Amos Doolittle's 1817 plan of New Haven, dedicated *to the mayor, aldermen and Common Council*: a very good picture, 11,483 pixels wide, that does not know where it is. It cannot be laid over today's streets, compared with another map of the same place, or found by searching for a place.
+Yale has digitized thousands of maps and publishes them through IIIF, the standard most libraries and museums now use to share images online. But a digitized map is a picture of a map. This is Amos Doolittle's 1817 plan of New Haven, dedicated *to the mayor, aldermen and Common Council*: a beautiful scan, 11,483 pixels across. Yet unless you read the text on the sheet, you would not know what place it shows. It cannot be laid over today's streets or compared with another map of the same place, and it cannot be found by searching for New Haven unless that text has been transcribed.
 
-<aside class="callout">
-
-<h2>Yale's maps today</h2>
-
-**13,259** cartographic objects in Yale Digital Collections carry a IIIF manifest (export of 23 July 2026). All of them are already loaded into Allmaps and ready to georeference.
-
-**62** have been georeferenced so far, under a Yale University Library organization page (Allmaps API, 17 October 2026).
-
-</aside>
-
-Georeferencing used to need GIS software, specialist staff and a second copy of the image to store and preserve. Allmaps needs only what we already have: the IIIF image. The next four slides show how a map is georeferenced in the Allmaps Editor.
+Georeferencing fixes that, and Allmaps needs only what we already have: the IIIF image. The next four slides show how a map is georeferenced in the Allmaps Editor.

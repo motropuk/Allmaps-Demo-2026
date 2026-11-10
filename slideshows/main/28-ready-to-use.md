@@ -15,6 +15,16 @@ warpedMaps:
       colorize: false
 ---
 
+<aside class="callout">
+
+<h2>Yale's maps today</h2>
+
+**13,259** digitized maps in Yale Digital Collections carry a IIIF manifest (export of 23 July 2026), and all of them have been loaded into Allmaps, ready to georeference.
+
+**62** have been georeferenced so far (Allmaps API, 17 October 2026). The headroom is enormous, and the barrier to entry is low.
+
+</aside>
+
 Because our maps are delivered through IIIF, every one of them is already in Allmaps. Open [editor.allmaps.org/organizations/yale](https://editor.allmaps.org/organizations/yale), pick any map, and start placing points; nothing to install, no account to create. Every georeferenced map shows a *Yale University Library* badge with a link back to Digital Collections wherever it appears.
 
 Four apps, all in the browser:
