@@ -32,3 +32,5 @@ Georeference annotations: [annotations.allmaps.org](https://annotations.allmaps.
 - Screen recording of the Allmaps Editor made on 17 October 2026 with the 1893 Hill map.
 
 Basemap: [Protomaps](https://protomaps.com) (OpenStreetMap contributors).
+
+Slides 2–9 use a copy of Doolittle's Georeference Annotation ([annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974), CC0) with the same control points and the mask redrawn around the Nine Squares (York, Grove, State and George Streets; corners located from OpenStreetMap data, © OpenStreetMap contributors, ODbL). The copy is in `assets/annotations/doolittle-nine-squares.json`.

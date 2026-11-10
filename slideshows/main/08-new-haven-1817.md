@@ -5,7 +5,7 @@ location:
   zoom: 14.7
   duration: 2500
 warpedMaps:
-  - url: https://annotations.allmaps.org/maps/444ba126f2bf8974
+  - path: annotations/doolittle-nine-squares.json
     caption: "Plan of the city of New Haven, Amos Doolittle, 1817"
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
@@ -24,4 +24,4 @@ warpedMaps:
 
 Now the maps themselves. Six maps of New Haven from Yale's collections, each georeferenced, each laid over today's street grid at the same spot. Watch the Green as you step through them: it stays put while the city grows around it.
 
-**1817.** Doolittle's plan: the Nine Squares and the Green, Yale College on the west side, and not much beyond. Each map is shown twice: first as it is, then made see-through, so the modern streets show where the historic ones lie.
+**1817.** Doolittle's plan, masked to the Nine Squares: the Green at the centre, with Yale College on its west side. Each map is shown twice: first as it is, then made see-through, so the modern streets show where the historic ones lie.

@@ -14,7 +14,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 
 ## 1 · Every digitized map, put back on the ground (0:00)
 
-Hi everyone and thank you for coming. Let's just start by looking at some maps, because that is really what we are here to do. What you are looking at is one of Yale Library's maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image you are seeing directly from our own Digital Collections server, right now, tile by tile, and bending it to sit on top of a modern street map. [Space] If I hold Space, there is the street map underneath. [release] [scroll to zoom out] And if I zoom out, you can see the historic map lying over the top of the modern one. [scroll back in]
+Hi everyone and thank you for coming. Let's just start by looking at some maps, because that is really what we are here to do. What you are looking at is one of Yale Library's maps: the City of New Haven, surveyed by A. B. Hill in about 1893, from the Beinecke. It is not a screenshot. The browser is pulling the image you are seeing directly from our own Digital Collections server, right now, tile by tile, and bending it to sit on top of a modern street map. [Space] If I hold Space, there is the modern street map underneath, which uses OpenStreetMap data. [release] [scroll to zoom out] And if I zoom out, you can see the historic map lying over the top of the modern one. [scroll back in]
 
 The tool doing this is called Allmaps. It is free and open source, it runs in a web browser, and it does one thing: it puts historical maps in their place geographically. This process is called georeferencing, and Allmaps makes georeferencing something anyone in this room could do. Over the next twenty minutes I want to show you how it works, what it does for our collections, and why Yale has put its name behind it. Every one of the maps you are going to see today is from our collections. [→]
 
@@ -26,9 +26,9 @@ Georeferencing fixes that. So let me show you how it works, using this Doolittle
 
 ## 3 · Step 1: draw the mask (3:00)
 
-Step one is the mask. Before you place a single point, you draw a polygon around the part of the scan you want to use. The pink outline is Doolittle's mask. Notice what it leaves out: the margins, the dedication at the bottom, the cartouche. Only what is inside the pink line will be warped; everything else is cropped away.
+Step one is to draw a mask. Before you place a single point, you draw a polygon around the part of the scan you want to use. The pink outline is our mask for Doolittle. Notice what it leaves out: we are focusing on just one part of the map, the Nine Squares at the heart of New Haven, bounded by York Street, Grove Street, State Street and George Street. Only what is inside the pink line will be warped; everything else is cropped away.
 
-In the Editor you do this by clicking the corners on the scan. For a city plan it takes about a minute. The reason I am showing the whole sheet here is so you can see where the boundary falls. [→]
+In the Editor you do this by clicking the corners on the scan; for an area like this it takes about a minute. I am showing you the whole sheet here so you can see where the boundary falls. [→]
 
 ## 4 · Step 2: control points on the scan (3:45)
 
@@ -58,7 +58,7 @@ That small file is what every Allmaps app reads to draw the map in place, and it
 
 Six maps of New Haven from our collections, each georeferenced, each laid over the same spot. As I step through them, watch the Green. It stays put while the city grows around it.
 
-1817: Doolittle. The Nine Squares, the Green, Yale College on the west side, and not much else. I am going to show each map twice: as it is, and then see-through, so you can see where the historic streets fall on today's. [→]
+1817: Doolittle, masked to the Nine Squares. The Green at the centre, with Yale College on its west side. I am going to show each map twice: as it is, and then see-through, so you can see where the historic streets fall on today's. [→]
 
 ## 9 · 1817, half transparent (8:15)
 

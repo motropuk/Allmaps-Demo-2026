@@ -1,0 +1,171 @@
+{
+ "id": "https://motropuk.github.io/Allmaps-Demo-2026/api/annotations/doolittle-nine-squares.json",
+ "type": "Annotation",
+ "@context": [
+  "http://iiif.io/api/extension/georef/1/context.json",
+  "http://iiif.io/api/presentation/3/context.json"
+ ],
+ "created": "2026-05-12T20:39:33.532Z",
+ "modified": "2026-11-10T19:30:00.000Z",
+ "motivation": "georeferencing",
+ "target": {
+  "type": "SpecificResource",
+  "source": {
+   "id": "https://collections.library.yale.edu/iiif/2/15691350",
+   "type": "ImageService2",
+   "height": 9000,
+   "width": 11483,
+   "partOf": [
+    {
+     "id": "https://collections.library.yale.edu/manifests/oid/15675073/canvas/15691350",
+     "type": "Canvas",
+     "label": {
+      "none": [
+       "recto"
+      ]
+     },
+     "partOf": [
+      {
+       "id": "https://collections.library.yale.edu/manifests/15675073",
+       "type": "Manifest",
+       "label": {
+        "none": [
+         "\"To the mayor, aldermen & Common Council of the city of New Haven, this plan is ... dedicated by ... Amos Doolittle.\""
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "provider": [
+    {
+     "label": {
+      "none": [
+       "Yale University Library"
+      ]
+     },
+     "homepage": [
+      {
+       "id": "https://collections.library.yale.edu/catalog?f%5Bgenre_ssim%5D%5B%5D=Maps"
+      }
+     ]
+    }
+   ]
+  },
+  "selector": {
+   "type": "SvgSelector",
+   "value": "<svg width=\"11483\" height=\"9000\"><polygon points=\"3031,1913 5639,3455 3910,6050 1368,4409\" /></svg>"
+  }
+ },
+ "body": {
+  "type": "FeatureCollection",
+  "transformation": {
+   "type": "polynomial",
+   "options": {
+    "order": 1
+   }
+  },
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      3867,
+      3559
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -72.925387,
+      41.3088289
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      2711,
+      5274
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -72.928584,
+      41.304384
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      3254,
+      4380
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -72.9270447,
+      41.3065621
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      4642,
+      4037
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -72.9226315,
+      41.3075802
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      2488,
+      2673
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -72.9301233,
+      41.3106512
+     ]
+    }
+   }
+  ],
+  "_allmaps": {
+   "id": "https://annotations.allmaps.org/maps/444ba126f2bf8974",
+   "version": "https://annotations.allmaps.org/maps/444ba126f2bf8974@f4aca3d5965c8449",
+   "image": {
+    "id": "https://annotations.allmaps.org/images/a887a2d1cbf6a302",
+    "version": "https://annotations.allmaps.org/images/a887a2d1cbf6a302@ae9b355697baa940",
+    "canvases": [
+     {
+      "id": "https://annotations.allmaps.org/canvases/80aee10452bcc337",
+      "manifests": [
+       {
+        "id": "https://annotations.allmaps.org/manifests/615e7449f8b4bc72"
+       }
+      ]
+     }
+    ]
+   },
+   "scale": 3.658182,
+   "area": 6851818.28
+  }
+ }
+}

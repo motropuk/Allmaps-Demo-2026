@@ -5,7 +5,7 @@ location:
   zoom: 14.6
   duration: 3000
 warpedMaps:
-  - url: https://annotations.allmaps.org/maps/444ba126f2bf8974
+  - path: annotations/doolittle-nine-squares.json
     caption: "Plan of the city of New Haven, Amos Doolittle, 1817"
     provenance: "Beinecke Rare Book and Manuscript Library, Yale University Library"
     homepage: https://collections.library.yale.edu/catalog/15675073
