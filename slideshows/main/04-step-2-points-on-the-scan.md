@@ -23,6 +23,6 @@ warpedMaps:
       renderTransformedGcpsSize: 14
 ---
 
-Next come the **control points**. In the Editor the screen is split: the scan on the left, a modern map on the right. You click a place on the scan, then click the same place on the modern map. Each click pair becomes a control point: a pixel on the scan matched to a longitude and latitude on the earth.
+Next come the **control points**. In the Editor the screen is split in two: the scan on the left, a modern map on the right. You click a place on the scan, then the same place on the modern map. Each pair of clicks becomes a control point: a spot on the scan matched to a location on the modern map. These two slides show the two halves one at a time.
 
-The pink dots are Doolittle's five control points as placed on the scan: street corners around the Nine Squares. Zoom in to see exactly where each one was clicked. The next slide shows the same five points on the modern map.
+The pink dots are the five control points placed on Doolittle's scan: street corners around the Nine Squares. Zoom in to see exactly where each one was clicked.

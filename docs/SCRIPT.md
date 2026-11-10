@@ -8,6 +8,7 @@ Read-aloud narrative for the 30-slide story at https://motropuk.github.io/Allmap
 - **Space (press and hold)**: hides the historic map so today's map shows underneath; let go to bring it back. Cues: **[Space]** … **[release]**
 - **H**: show or hide the text panel. The panel starts hidden, so the maps fill the screen; press H when you want the audience to read the panel or click a link in it. Cue: **[H]**
 - **Esc**: close the text panel
+- **I**: show or hide the source information for the map on screen, as in the Allmaps Viewer (or click the title strip at the top). **Esc** closes it. Cue: **[press I]**
 - **Full screen**: happens automatically when you click **Start**. To leave or re-enter, click the full-screen button under the title (top left) or press **F**.
 - **Mouse**: drag to move the map, scroll to zoom. Cue: **[scroll to zoom]**
 - **If a map ever comes up blank**: **Cmd + Shift + R** reloads on the same slide.
@@ -22,37 +23,37 @@ The tool doing this is called Allmaps. It is free and open source, it runs in a 
 
 Here is the problem Allmaps tries to solve. We have thousands of digitized maps, and we publish them through IIIF, which is now the standard most of the field uses for sharing images online. Having all of this content online is a real achievement. But a digitized map is a picture of a map. This one is Amos Doolittle's Plan of New Haven from 1817, dedicated to the mayor and aldermen of the town. [scroll to zoom in and out] It is a beautiful scan, more than eleven thousand pixels across. But unless you read the text on the sheet, you would have no idea what this is a map of. You could not lay it over today's streets, and you could not find it by searching for New Haven, unless that text had been transcribed.
 
-Georeferencing fixes that. So let me show you how it works, using this Doolittle map. The next four slides are the four steps in the Allmaps Editor. [→]
+Georeferencing fixes that. So let me show you how it works, using this Doolittle map. The next four slides are the four steps in the Allmaps Editor, the tool you use to georeference a map. [→]
 
 ## 3 · Step 1: draw the mask (3:00)
 
 Step one is to draw a mask. Before you place a single point, you draw a polygon around the part of the scan you want to use. The pink outline is our mask for Doolittle. Notice what it leaves out: we are focusing on just one part of the map, the Nine Squares at the heart of New Haven, bounded by York Street, Grove Street, State Street and George Street. Only what is inside the pink line will be warped; everything else is cropped away.
 
-In the Editor you do this by clicking the corners on the scan; for an area like this it takes about a minute. I am showing you the whole sheet here so you can see where the boundary falls. [→]
+In the Editor you do this by clicking the corners on the scan; for an area like this it takes about a minute. I am showing you the whole sheet here so you can see where the boundary lies. [→]
 
 ## 4 · Step 2: control points on the scan (3:45)
 
-Step two is the control points, and this is the only step that needs any thought. In the Editor the screen is split in two: the scan on the left, a modern map on the right. You click a street corner on the scan, then you click the same street corner on the modern map. That pair of clicks is one control point.
+Step two is the control points, and this is the only step that needs any thought. When you are working in the Editor, the screen is split in two: the scan on the left, a modern map on the right. You click a street corner on the scan, then you click the same street corner on the modern map. That pair of clicks is one control point. I am going to show you the two halves one at a time.
 
-These pink dots are the five points someone placed on Doolittle: street corners around the Nine Squares. [scroll to zoom in on one] Zoom in and you can see exactly where the click landed. Now let me show you the other half of the screen. [→]
+These pink dots are the five points placed on Doolittle by the person who georeferenced it: street corners around the Nine Squares. [scroll to zoom in] If I zoom in, you can see exactly where each one landed. [→]
 
 ## 5 · Step 2: the same points on today's map (4:45)
 
-This is the right-hand side of the Editor: today's New Haven, with the same five points in blue, exactly where they were clicked. I have hidden the historic map so you can see the modern side on its own. Pink on the scan, blue on the modern map, one pair for each corner.
+And this is what you would see on the other side of the screen: today's New Haven, with the same five points in blue, exactly where they were clicked. I have hidden the historic map so you can see the modern side on its own. Each pink point on the scan has a blue partner here, one pair for each corner.
 
-Five pairs were enough for Doolittle. For a detailed survey you might place thirty or forty. The Editor shows you the fit improving as you add them, and if you get one wrong you drag it. Nothing is locked. [→]
+Five pairs were enough for Doolittle. A more complicated map, or a detailed survey, might need thirty or forty, and you can go back and forth adding them as you need. The Editor shows you the fit improving as you add them, and if you get one wrong, you just drag it to the right place. [→]
 
 ## 6 · Step 3: the map is placed (5:30)
 
-Step three happens by itself. With the mask and the points, Allmaps warps the scan onto the modern map. The blue dots are the control points on today's map, the pink dots are where the warped scan puts them, and the white lines join each pair. Short lines mean a good fit. This is the view the Editor gives you on its Results step, so you can see at a glance whether a point needs moving.
+Step three happens by itself. With the mask and the points, Allmaps warps the scan onto the modern map. The blue dots are the control points on today's map, and the pink dots are where the warped scan puts them. The white lines join each pair: they show the gap between where a point was clicked and where the warped map actually puts it. A short line means a good fit. [point to a longer line] Where you see a bit of a gap, like this one, the fit is slightly off at that point.
 
-I have drawn the map at 65 per cent so the streets show through. [Space] And underneath it: today's streets. [release] The Nine Squares have not moved in two hundred years. [→]
+This is the view the Editor gives you on its Results step, so you can see at a glance whether a point needs moving. [Space] Hold Space and you can see the streets it is lying on. [release] The Nine Squares have not moved in two hundred years. [→]
 
 ## 7 · Step 4: it is published (6:30)
 
-Step four is the one you do not do. There is no save button. Every edit is stored straight away as a Georeference Annotation: a few kilobytes of open JSON at a stable web address, which records three things, the IIIF image, the mask, and the points. That is the whole output. The image never moves; it stays on our server, under our control.
+Step four is the one you don't have to do. There is no save button. Every edit is stored straight away as a Georeference Annotation: a few kilobytes of open JSON at a stable web address, which records three things: the IIIF image, the mask and the points. That is the whole output. The image never moves; it stays on our server, under our control.
 
-That small file is what every Allmaps app reads to draw the map in place, and it is what makes the map findable by location, which is where this story ends up. [H] Doolittle's annotation is linked on the panel if anyone wants to see what one looks like. [H] Now, the maps. [→]
+That small file is what every Allmaps app reads to draw the map in place, and it is what makes the map findable by location, which is where this story ends up. And it always keeps the link back to the original. [click the title strip at the top, or press I] Just as in the Allmaps Viewer, the strip at the top tells you which map this is and that it comes from Yale University Library. Click it and you get the source information: the catalogue details from our IIIF manifest, and a link straight to the record in Yale Digital Collections. [click Yale Digital Collections page, then come back to the deck] [Esc to close] Now, the maps. [→]
 
 ## 8 · New Haven, 1817 (7:30)
 

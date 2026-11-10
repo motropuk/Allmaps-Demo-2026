@@ -103,11 +103,12 @@ jobs:
           PUBLIC_PROTOMAPS_KEY: ${{ vars.PUBLIC_PROTOMAPS_KEY }}
         run: xvfb-run -a pnpm exec slides build . --outDir dist/site
 
-      - name: Add the full-screen helper
+      - name: Add the presenter helper
         env:
           PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
           cp extras/fullscreen.js dist/site/fullscreen.js
+          python3 extras/build_slide_maps.py dist/site/slide-maps.json
           find dist/site -name '*.html' -print0 | xargs -0 sed -i "s#</head>#<script src=\"${PUBLIC_BASE_PATH}/fullscreen.js\" defer></script></head>#"
           grep -l 'fullscreen.js' dist/site/index.html
 

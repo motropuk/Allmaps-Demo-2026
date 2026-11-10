@@ -11,7 +11,7 @@ warpedMaps:
     homepage: https://collections.library.yale.edu/catalog/15675073
     options:
       renderMaps: true
-      opacity: 0.65
+      opacity: 1
       applyMask: true
       renderMask: false
       renderGcps: true
@@ -26,9 +26,11 @@ warpedMaps:
       renderTransformedGcpsColor: "#ff56ba"
       renderTransformedGcpsSize: 12
       renderVectorsColor: "#ffffff"
-      renderVectorsSize: 3
+      renderVectorsSize: 5
+      renderVectorsBorderColor: "#111111"
+      renderVectorsBorderSize: 2
 ---
 
-With the mask and the control points, Allmaps warps the scan onto the modern map. Blue dots are the control points on today's map; pink dots are where the warped scan puts them; the white lines join each pair. Short lines mean a good fit, and this is the view the Editor shows you on its *Results* step.
+With the mask and the control points, Allmaps warps the scan onto the modern map. Blue dots are the control points on today's map; pink dots are where the warped scan puts them. The **white lines** join each pair and show the gap between where a point was clicked and where the warped map actually puts it. A short line means a good fit; a longer one tells you a point may need moving. This is the view the Editor shows you on its *Results* step.
 
-The map is drawn here at 65% opacity so the modern streets show through. Hold **Space** to hide the historic map entirely and see what it is lying on.
+Hold **Space** to hide the historic map and see the streets it is lying on.

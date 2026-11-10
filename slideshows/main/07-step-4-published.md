@@ -26,4 +26,6 @@ There is no save button. Every edit in the Editor is stored at once as a **Geore
 
 That file is what every Allmaps app, and any other tool that understands the IIIF Georeference Extension, reads to draw the map in place. It is also what makes the map discoverable by location, which is the subject of the last part of this story.
 
-Doolittle's annotation in Allmaps: [annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974). The copy used in these slides has the same control points, with the mask redrawn around the Nine Squares: [doolittle-nine-squares.json](https://motropuk.github.io/Allmaps-Demo-2026/api/annotations/doolittle-nine-squares.json)
+Every Allmaps app keeps the link back to the original. As in the Allmaps Viewer, the strip at the top of the screen names the map and its provider. Click it, or press **I**, for the source information: the catalogue details from Yale's IIIF manifest and a link to the record in Yale Digital Collections.
+
+Doolittle's annotation in Allmaps: [annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974). These slides use a copy with the same control points and the mask redrawn around the Nine Squares.

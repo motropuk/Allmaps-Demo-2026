@@ -1,8 +1,11 @@
 // Presenter helper for the Allmaps at Yale Library deck.
 // Adds: full screen on clicking Start, an on-screen toggle button, the F key,
-// and starts the deck with the text panel hidden (press H to show it).
+// starts the deck with the text panel hidden (press H to show it), and shows an
+// Allmaps Viewer-style source header for the map on each slide (click it, or press I).
 (function () {
   var doc = document;
+  var SCRIPT_SRC = (doc.currentScript && doc.currentScript.src) || '';
+  var BASE = SCRIPT_SRC ? SCRIPT_SRC.replace(/fullscreen\.js(\?.*)?$/, '') : '/';
   var isFull = function () { return !!(doc.fullscreenElement || doc.webkitFullscreenElement); };
   var enter = function () {
     var root = doc.documentElement;
@@ -80,4 +83,103 @@
   }, 700);
   // The presenter's own H press ends the automatic hiding.
   doc.addEventListener('keydown', function (e) { if (e.isTrusted && (e.key === 'h' || e.key === 'H')) done = true; }, true);
+
+  // ---- Source information, as in the Allmaps Viewer ------------------------
+  // A header strip names the map and its provider; clicking it (or pressing I)
+  // opens the source information, with catalogue details from the IIIF
+  // manifest and a link to the record in Yale Digital Collections.
+  var slideMaps = null, manifestCache = {};
+  fetch(BASE + 'slide-maps.json').then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { slideMaps = d; update(); }).catch(function () {});
+
+  var srcCss = doc.createElement('style');
+  srcCss.textContent =
+    '#yale-src{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:2147482000;display:none;align-items:center;gap:8px;' +
+    'max-width:min(640px,calc(100vw - 460px));padding:6px 8px 6px 10px;border:0;border-radius:999px;background:rgba(255,255,255,.96);' +
+    'box-shadow:0 2px 10px rgba(0,0,0,.18);cursor:pointer;font:500 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f8f5f}' +
+    '#yale-src:hover{box-shadow:0 2px 14px rgba(0,0,0,.28)}' +
+    '#yale-src .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
+    '#yale-src svg{flex:none;color:#555}' +
+    '.yale-badge{flex:none;white-space:nowrap;font:500 13px/1 system-ui,-apple-system,sans-serif;color:#1d8a8a;border:1px solid #7fc8c8;' +
+    'background:#eaf7f7;border-radius:999px;padding:4px 9px}' +
+    '#yale-card{position:fixed;top:58px;left:50%;transform:translateX(-50%);z-index:2147482001;display:none;width:min(600px,calc(100vw - 32px));' +
+    'max-height:calc(100vh - 140px);overflow:auto;background:#fff;color:#1a1a1a;border-radius:14px;box-shadow:0 10px 34px rgba(0,0,0,.28);' +
+    'padding:16px 18px;font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}' +
+    '#yale-card .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}' +
+    '#yale-card h2{font-size:17px;font-weight:650;margin:0;line-height:1.3}' +
+    '#yale-card .ann{font:12px/1.4 ui-monospace,Menlo,monospace;color:#555;background:#f4f4f4;border-radius:8px;padding:6px 8px;margin:0 0 10px;word-break:break-all}' +
+    '#yale-card dl{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;margin:0 0 12px}' +
+    '#yale-card dt{color:#777}#yale-card dd{margin:0}' +
+    '#yale-card .links{display:flex;flex-wrap:wrap;gap:8px}' +
+    '#yale-card .links a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;color:#fff;background:#00356b;border-radius:9px;padding:8px 12px}' +
+    '#yale-card .links a.alt{background:#fff;color:#00356b;border:1px solid #00356b}' +
+    '#yale-card .note{color:#777;font-size:12.5px;margin:10px 0 0}' +
+    '#yale-card + .yale-sep{display:none}';
+  var ICON_INFO = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>';
+  var pill = doc.createElement('button'); pill.id = 'yale-src'; pill.type = 'button';
+  pill.setAttribute('aria-label', 'Source information'); pill.setAttribute('aria-expanded', 'false');
+  var card = doc.createElement('div'); card.id = 'yale-card'; card.setAttribute('role', 'dialog'); card.setAttribute('aria-label', 'Source information');
+  var esc = function (t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var unent = function (t) { var el = doc.createElement('textarea'); el.innerHTML = t; return el.value; };
+  var str = function (v) { if (!v) return ''; if (typeof v === 'string') return v; var k = Object.keys(v)[0]; return (v[k] || []).join('; '); };
+  var currentMap = function () {
+    if (!slideMaps || !slideMaps.slides) return null;
+    var slug = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+    var slide = null;
+    for (var i = 0; i < slideMaps.slides.length; i++) if (slideMaps.slides[i].slug === slug) slide = slideMaps.slides[i];
+    if (!slide && !slug) slide = slideMaps.slides[0];
+    return slide && slide.maps.length ? slide.maps[0] : null;
+  };
+  var annotationUrl = function (m) { return m.annotation || (m.path ? BASE + 'api/' + m.path.replace(/^\/+/, '') : ''); };
+  var shownKey = null;
+  var renderCard = function (m) {
+    var ann = annotationUrl(m);
+    var html = '<div class="head"><h2>' + esc(m.title) + '</h2><span class="yale-badge">Yale University Library</span></div>' +
+      '<p class="ann">' + esc(ann) + '</p><dl id="yale-meta"><dt>Repository</dt><dd>' + esc(m.provenance || '') + '</dd></dl>' +
+      '<div class="links">' + (m.homepage ? '<a href="' + esc(m.homepage) + '" target="_blank" rel="noopener">Yale Digital Collections page &#8599;</a>' : '') +
+      '<a class="alt" href="https://viewer.allmaps.org/?url=' + encodeURIComponent(ann) + '" target="_blank" rel="noopener">Open in Allmaps Viewer &#8599;</a></div>' +
+      '<p class="note">As in the Allmaps Viewer: the details come from Yale\'s IIIF manifest for this map.</p>';
+    card.innerHTML = html;
+    if (!m.manifest) return;
+    var fill = function (man) {
+      if (!man || card.style.display === 'none') return;
+      var want = ['Published/Created Date', 'Creator', 'Repository', 'Call Number', 'Extent', 'Scale'];
+      var rows = '<dt>Label</dt><dd>' + esc(str(man.label)) + '</dd>';
+      (man.metadata || []).forEach(function (e) {
+        var l = str(e.label); if (want.indexOf(l) < 0) return;
+        rows += '<dt>' + esc(l.replace('Published/Created Date', 'Date')) + '</dt><dd>' + esc(unent(str(e.value))) + '</dd>';
+      });
+      var dl = doc.getElementById('yale-meta'); if (dl) dl.innerHTML = rows;
+    };
+    if (manifestCache[m.manifest]) fill(manifestCache[m.manifest]);
+    else fetch(m.manifest).then(function (r) { return r.json(); }).then(function (j) { manifestCache[m.manifest] = j; fill(j); }).catch(function () {});
+  };
+  var openCard = function () { var m = currentMap(); if (!m) return; renderCard(m); card.style.display = 'block'; pill.setAttribute('aria-expanded', 'true'); };
+  var closeCard = function () { card.style.display = 'none'; pill.setAttribute('aria-expanded', 'false'); };
+  var toggleCard = function () { card.style.display === 'block' ? closeCard() : openCard(); };
+  pill.addEventListener('click', function (e) { e.stopPropagation(); toggleCard(); pill.blur(); });
+  card.addEventListener('click', function (e) { e.stopPropagation(); });
+  doc.addEventListener('click', function (e) { if (card.style.display === 'block' && !card.contains(e.target)) closeCard(); });
+  doc.addEventListener('keydown', function (e) {
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    var t = e.target; if (t && t.closest && t.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+    if (e.key === 'i' || e.key === 'I') { e.preventDefault(); toggleCard(); }
+    else if (e.key === 'Escape' && card.style.display === 'block') { closeCard(); }
+  });
+  var update = function () {
+    var m = currentMap();
+    var hide = !m || startVisible();
+    var key = m ? annotationUrl(m) + '|' + location.hash : null;
+    if (hide) { pill.style.display = 'none'; closeCard(); return; }
+    pill.innerHTML = ICON_INFO + '<span class="t">' + esc(m.title) + '</span><span class="yale-badge">Yale University Library</span>';
+    pill.style.display = 'flex';
+    if (key !== shownKey) { shownKey = key; if (card.style.display === 'block') renderCard(m); }
+  };
+  var mountSrc = function () {
+    if (!doc.getElementById('yale-src')) { doc.head.appendChild(srcCss); doc.body.appendChild(pill); doc.body.appendChild(card); }
+    update();
+  };
+  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', mountSrc); else mountSrc();
+  window.addEventListener('hashchange', update);
+  setInterval(mountSrc, 700);
 })();
