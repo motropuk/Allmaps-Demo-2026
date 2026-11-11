@@ -30,3 +30,7 @@ The original text and configuration in this repository are released under CC0 1.
 ## Presenter helper
 
 `extras/fullscreen.js` is injected into every page at build time (see the workflow). Clicking **Start** enters full screen; a button under the title and the **F** key toggle it. On slides marked `<!-- embed: URL -->` (28–31) it shows that Allmaps app live in a window. On every map slide a strip at the top names the map and its provider, as in the Allmaps Viewer; clicking it or pressing **I** opens the source information (catalogue details from the Yale IIIF manifest, with links to the Yale Digital Collections record and the Allmaps Viewer). `extras/build_slide_maps.py` writes the slide-to-map index it reads.
+
+## Patch to Allmaps Slides
+
+`patches/@allmaps__slides@0.1.0-beta.2.patch` (applied by pnpm on install) keeps the presenter's pan and zoom when the next slide shows the same maps from the same view, such as a map followed by its see-through version. Without it the deck flies back to the slide's set view on every change.

@@ -20,3 +20,11 @@ site:
 # no secret; it only controls which origins may use it.
 protomaps:
   key: ${PUBLIC_PROTOMAPS_KEY}
+
+# Show street and place names on the modern basemap. They sit below the
+# historic maps, so they show through on see-through slides and when Space
+# hides the historic map, without cluttering the historic maps themselves.
+map:
+  labels:
+    visible: true
+    position: belowWarpedMaps

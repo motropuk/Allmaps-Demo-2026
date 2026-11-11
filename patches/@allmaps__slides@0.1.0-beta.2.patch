@@ -1,0 +1,48 @@
+diff --git a/app/src/lib/components/Map.svelte b/app/src/lib/components/Map.svelte
+index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..bf552422ce613fda2cda780e6c1f249ed82f949d 100644
+--- a/app/src/lib/components/Map.svelte
++++ b/app/src/lib/components/Map.svelte
+@@ -839,11 +839,43 @@
+     });
+   }
+ 
++  // Yale demo patch: when the next slide shows the same maps from the same
++  // view (e.g. a map and then its see-through version), keep the presenter's
++  // current pan and zoom instead of flying back to the slide's set view.
++  let lastCameraChapterIndex: number | undefined;
++  let lastCameraKey: string | undefined;
++  let keepViewForChapterIndex: number | undefined;
++  function chapterCameraKey(chapter: typeof currentChapter): string {
++    const location = chapter?.location ?? {};
++    return JSON.stringify({
++      center: location.center,
++      zoom: location.zoom,
++      bearing: location.bearing,
++      fit: chapter?.fit,
++      maps: (chapter?.warpedMaps ?? []).map((m) => m.url).sort(),
++    });
++  }
++
+   function setChapterCamera() {
+     layoutRevision;
+     resetSignal;
+     currentSlideResourcesRevision;
+     if (!mapLoaded || !currentSlideResourcesReady()) return;
++    if (!focusedMapUrl && currentWarpedMaps) {
++      const chapterIndex = index;
++      if (chapterIndex !== lastCameraChapterIndex) {
++        const key = chapterCameraKey(currentChapter);
++        keepViewForChapterIndex =
++          lastCameraChapterIndex !== undefined && key === lastCameraKey
++            ? chapterIndex
++            : undefined;
++        lastCameraChapterIndex = chapterIndex;
++        lastCameraKey = key;
++      }
++      // Stay put for every camera update on this slide (resources loading,
++      // layout changes), not just the first one.
++      if (keepViewForChapterIndex === chapterIndex) return;
++    }
+     const cameraLayoutOptions = getCameraLayoutOptions(currentPadding);
+     if (focusedMapUrl) {
+       const ids = getMapIdsForAnnotationUrl(focusedMapUrl);
