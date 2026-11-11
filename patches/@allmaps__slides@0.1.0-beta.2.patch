@@ -1,8 +1,8 @@
 diff --git a/app/src/lib/components/Map.svelte b/app/src/lib/components/Map.svelte
-index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..bf552422ce613fda2cda780e6c1f249ed82f949d 100644
+index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..77dca5023a4daddbcd51e2316b468e5d01d25019 100644
 --- a/app/src/lib/components/Map.svelte
 +++ b/app/src/lib/components/Map.svelte
-@@ -839,11 +839,43 @@
+@@ -839,11 +839,46 @@
      });
    }
  
@@ -32,8 +32,11 @@ index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..bf552422ce613fda2cda780e6c1f249e
 +      const chapterIndex = index;
 +      if (chapterIndex !== lastCameraChapterIndex) {
 +        const key = chapterCameraKey(currentChapter);
++        // Scan-only slides (no basemap) always show the whole sheet.
 +        keepViewForChapterIndex =
-+          lastCameraChapterIndex !== undefined && key === lastCameraKey
++          lastCameraChapterIndex !== undefined &&
++          key === lastCameraKey &&
++          !currentChapter?.hideBasemap
 +            ? chapterIndex
 +            : undefined;
 +        lastCameraChapterIndex = chapterIndex;
