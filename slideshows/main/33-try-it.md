@@ -18,4 +18,4 @@ This is the 1883 Price, Lee & Co. map of New Haven. [Open it in the Allmaps Edit
 
 Further reading: Yale Library's [news article on the partnership](https://library.yale.edu/news/yale-library-partners-support-deep-research-digitized-map-collections-worldwide), with a [short video](https://www.youtube.com/watch?v=fHt2IzfAkts) on working with our map collection.
 
-Questions: Jon Manton, Director of Digital Collections and Access, Yale Library. Every map in this story is from Yale Digital Collections; catalogue records and sources are in the **Credits**.
+Questions: Jon Manton, Director of Digital Collections and Access, Yale Library, [jonathan.manton@yale.edu](mailto:jonathan.manton@yale.edu). Every map in this story is from Yale Digital Collections; catalogue records and sources are in the **Credits**.
