@@ -28,3 +28,5 @@ Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here to
 </aside>
 
 Because our maps are delivered through IIIF, none of them had to be copied or uploaded. Wherever one appears in Allmaps it carries a *Yale University Library* badge with a link back to Digital Collections. The next four slides show the four Allmaps apps, live.
+
+*Zoom out to find Yale's maps from New Orleans to Florence.*

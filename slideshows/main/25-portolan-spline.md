@@ -17,3 +17,5 @@ warpedMaps:
 ---
 
 Same chart, same eight points, one setting changed. Instead of stretching the sheet evenly, Allmaps now **bends** it, like a rubber sheet pinned down at each control point (in the Editor this is the *thin-plate spline* option). Every point lands where it was clicked, and the coastline settles much closer to today's. The choice of fit is made map by map and saved with the points.
+
+*Zoom in on the same pair to see the gap close.*

@@ -18,3 +18,5 @@ warpedMaps:
 ---
 
 Paper removed. Every red mark is a saloon, now on the modern block where it stood: the map stops being an illustration and becomes data.
+
+*Zoom in on a block you know and count the saloons.*

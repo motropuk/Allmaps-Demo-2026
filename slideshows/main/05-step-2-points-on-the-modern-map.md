@@ -29,3 +29,5 @@ warpedMaps:
 This is the other half of the Editor's screen: today's New Haven, with the **same five control points** in blue, exactly where they were clicked on the modern map. The historic map is hidden on this slide so you can see the modern side on its own.
 
 Pink on the scan, blue on the modern map, one pair per corner. That is all the Editor needs: for a plan like this, five pairs; for a detailed survey, thirty or forty. The Editor shows the fit improving as you add them, and if a point is in the wrong place you simply drag it.
+
+*Zoom in on any blue dot to see the street corner it marks.*

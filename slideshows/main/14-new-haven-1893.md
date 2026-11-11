@@ -16,3 +16,5 @@ warpedMaps:
 ---
 
 **1893.** A. B. Hill's survey, probably the most precise of the set, with forty control points. Ward boundaries in red, parks in green, every public building named. This is the map from the first slide.
+
+*Zoom in: every public building is named.*

@@ -16,3 +16,5 @@ warpedMaps:
 ---
 
 The same fit, coloured to show how much **bending** was needed: one colour where the chart had to be stretched, the other where it had to be squeezed. The stronger the colour, the more that part had to change, which gives a historian a picture of where the chart departs most from modern geography.
+
+*Zoom in to see where the colour is strongest.*

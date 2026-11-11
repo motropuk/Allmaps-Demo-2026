@@ -23,3 +23,5 @@ warpedMaps:
 Yale has digitized thousands of maps and publishes them through IIIF, the standard most libraries and museums now use to share images online. But a digitized map is a picture of a map. This is Amos Doolittle's 1817 plan of New Haven, dedicated *to the mayor, aldermen and Common Council*: a beautiful scan, 11,483 pixels across. Yet unless you read the text on the sheet, you would not know what place it shows. It cannot be laid over today's streets or compared with another map of the same place, and it cannot be found by searching for New Haven unless that text has been transcribed.
 
 Georeferencing fixes that, and Allmaps needs only what we already have: the IIIF image. The next four slides show how a map is georeferenced in the Allmaps Editor.
+
+*Zoom in to see the detail of the engraving and the dedication.*

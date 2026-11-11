@@ -23,3 +23,5 @@ Because our maps are delivered through IIIF, they appear in Allmaps alongside ma
 By the end of the year Allmaps plans a first version of **Allmaps Explore**: think of it as Google Maps for historical maps. Search for any place in the world and see every map of it that has been georeferenced, from any participating institution, in one view. That will change how our map collections are discovered.
 
 </aside>
+
+*Zoom in on any of Yale's maps around the world.*

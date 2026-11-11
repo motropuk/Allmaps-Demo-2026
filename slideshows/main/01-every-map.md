@@ -19,4 +19,4 @@ Allmaps is a free, open-source tool that lays historical maps over modern ones. 
 
 What you are looking at is the **City of New Haven** as surveyed by A. B. Hill in about 1893, one of the Beinecke's maps. It is being drawn right now, in this browser, straight from Yale Digital Collections' own image server and bent to fit a modern map underneath. Nothing was exported and no copy was made.
 
-This story uses Yale's own maps to show how it works and what it is for. Use the arrow keys to move on. Drag the map, scroll to zoom, and hold **Space** at any point to see today's streets underneath.
+This story uses Yale's own maps to show how it works and what it is for. Use the arrow keys to move on. Drag the map to move around, and zoom in and out with the scroll wheel, a pinch on a trackpad or phone, or the **+** and **−** buttons at the bottom left. Hold **Space** at any point to see today's streets underneath.

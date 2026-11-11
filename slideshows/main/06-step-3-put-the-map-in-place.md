@@ -34,3 +34,5 @@ warpedMaps:
 With the mask and the control points, Allmaps warps the scan onto the modern map. Blue dots are the control points on today's map; pink dots are where the warped scan puts them. The **white lines** join each pair and show the gap between where a point was clicked and where the warped map actually puts it. A short line means a good fit; a longer one tells you a point may need moving. This is the view the Editor shows you on its *Results* step.
 
 Hold **Space** to hide the historic map and see the streets it is lying on.
+
+*Zoom in on a pair of dots to see the white line between them.*

@@ -14,3 +14,5 @@ warpedMaps:
 ---
 
 Down the coast to New Haven harbour, on the same sheet. Hold **Space** to compare the engraved shoreline with today's. It will not match exactly, but for a hand-drawn regional map placed with eleven points, the fit is good.
+
+*Zoom in on the harbour to compare the shoreline with today's.*

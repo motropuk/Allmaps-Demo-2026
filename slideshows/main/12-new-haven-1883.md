@@ -15,3 +15,5 @@ warpedMaps:
 ---
 
 **1883.** Price, Lee & Co.'s map, surveyed by S. W. Searle for the city directory publishers. Placed with just four control points.
+
+*Zoom in to read the street names.*

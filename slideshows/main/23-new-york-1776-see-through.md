@@ -18,3 +18,5 @@ warpedMaps:
 ---
 
 Paper removed: the 1776 positions on the Brooklyn and Manhattan of today. A hand-drawn map will not line up exactly with modern mapping, but laid over it you can see roughly where things were and compare places in a way the flat scan does not allow.
+
+*Zoom in to compare the 1776 shoreline and streets with today's.*

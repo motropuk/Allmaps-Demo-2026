@@ -11,3 +11,5 @@ warpedMaps:
 ---
 
 The same method works at any scale. Thomas Jefferys's 1774 *Map of the most inhabited part of New England* covers a whole region rather than a city, and eleven control points are enough to lay it across three states.
+
+*Zoom out to see the whole region.*

@@ -15,3 +15,5 @@ warpedMaps:
 ---
 
 **1847.** The *Map of the city of New Haven*. The city has pushed out towards the harbour and along the Mill River, and you can see the development that has followed. Forty control points.
+
+*Zoom out to see how far the city had spread by 1847.*

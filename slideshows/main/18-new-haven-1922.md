@@ -15,3 +15,5 @@ warpedMaps:
 ---
 
 **1922.** The *Map of New Haven and Suburbs*, from Manuscripts and Archives. Ten control points. A century after Doolittle the Nine Squares are a small part of the whole.
+
+*Zoom out to see how far the city reached by 1922.*
