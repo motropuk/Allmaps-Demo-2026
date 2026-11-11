@@ -52,6 +52,8 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Set up native renderer
+        id: renderer
+        continue-on-error: true
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
@@ -101,7 +103,14 @@ jobs:
           PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           PUBLIC_URL: ${{ steps.pages.outputs.base_url }}
           PUBLIC_PROTOMAPS_KEY: ${{ vars.PUBLIC_PROTOMAPS_KEY }}
-        run: xvfb-run -a pnpm exec slides build . --outDir dist/site
+          RENDERER_OK: ${{ steps.renderer.outcome == 'success' }}
+        run: |
+          if [ "$RENDERER_OK" = "true" ]; then
+            xvfb-run -a pnpm exec slides build . --outDir dist/site
+          else
+            echo "::warning::Native renderer packages unavailable; building without slide thumbnails"
+            SLIDES_THUMBNAILS_ENABLED=false pnpm exec slides build . --outDir dist/site
+          fi
 
       - name: Add the presenter helper
         env:
