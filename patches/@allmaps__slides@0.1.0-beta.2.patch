@@ -1,8 +1,8 @@
 diff --git a/app/src/lib/components/Map.svelte b/app/src/lib/components/Map.svelte
-index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..77dca5023a4daddbcd51e2316b468e5d01d25019 100644
+index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..042cd35f124f3fd4c4c748bdeaae668157082246 100644
 --- a/app/src/lib/components/Map.svelte
 +++ b/app/src/lib/components/Map.svelte
-@@ -839,11 +839,46 @@
+@@ -839,11 +839,52 @@
      });
    }
  
@@ -32,10 +32,16 @@ index c266c4539c7bab1842ece5a3d6b3244c9e5d0c51..77dca5023a4daddbcd51e2316b468e5d
 +      const chapterIndex = index;
 +      if (chapterIndex !== lastCameraChapterIndex) {
 +        const key = chapterCameraKey(currentChapter);
-+        // Scan-only slides (no basemap) always show the whole sheet.
++        // Keep the view only for an instant switch (location duration 0, or a
++        // fitted slide with no location) to the same maps and view. Scan-only
++        // slides (no basemap) always show the whole sheet.
++        const instantSwitch = currentChapter?.location
++          ? currentChapter.location.duration === 0
++          : true;
 +        keepViewForChapterIndex =
 +          lastCameraChapterIndex !== undefined &&
 +          key === lastCameraKey &&
++          instantSwitch &&
 +          !currentChapter?.hideBasemap
 +            ? chapterIndex
 +            : undefined;

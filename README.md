@@ -33,4 +33,4 @@ The original text and configuration in this repository are released under CC0 1.
 
 ## Patch to Allmaps Slides
 
-`patches/@allmaps__slides@0.1.0-beta.2.patch` (applied by pnpm on install) keeps the presenter's pan and zoom when the next slide shows the same maps from the same view, such as a map followed by its see-through version. Scan-only slides (`hideBasemap: true`, slides 2–4) always open on the whole sheet. Without it the deck flies back to the slide's set view on every change.
+`patches/@allmaps__slides@0.1.0-beta.2.patch` (applied by pnpm on install) keeps the presenter's pan and zoom when the next slide switches instantly (`duration: 0`, or a fitted slide with no location) to the same maps and view, such as a map followed by its see-through version. Scan-only slides (`hideBasemap: true`, slides 2–4) always open on the whole sheet. Without it the deck flies back to the slide's set view on every change.

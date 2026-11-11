@@ -3,7 +3,7 @@ title: "Step 4: it is published"
 location:
   center: [-72.9268, 41.3083]
   zoom: 14.6
-  duration: 0
+  duration: 1500
 warpedMaps:
   - path: annotations/doolittle-nine-squares.json
     caption: "Plan of the city of New Haven, Amos Doolittle, 1817"
