@@ -143,9 +143,9 @@ Bending a map to fit is fine, as long as you can see how much bending it took, a
 
 ## 27 · Yale's maps in Allmaps (18:15)
 
-So where are we now? [H to show the panel] Everything on screen is one of Yale's maps, georeferenced in Allmaps and shown together: here, our maps of Connecticut and New England layered on top of one another. [scroll to zoom out, across to Europe] Zoom out and you find the rest, from New Orleans to Florence.
+So where are we now? [H to show the panel] Everything on screen is one of Yale's maps, georeferenced in Allmaps and shown together, with the most detailed maps drawn on top. Here are our maps of Connecticut and New England, layered on top of one another. [scroll to zoom in on New Haven] Zoom in on New Haven and you can see the city stacked up in place: city plans, harbour surveys, and an 1894 plan of the sewer system. [scroll to zoom out, across to Europe and Asia] Zoom out and you find the rest, from San Francisco to Vienna and Kunming.
 
-We have roughly thirteen thousand two hundred and fifty-nine digitized maps with IIIF manifests, and we have recently loaded every one of them into Allmaps. Sixty-two have been georeferenced so far. So there is a lot still to do: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. And wherever one of our maps appears in Allmaps, it carries a Yale University Library badge with a link back to Digital Collections. So that is where Yale's maps stand. Now let me show you the four apps that make up Allmaps, live. [→]
+We have roughly thirteen thousand two hundred and fifty-nine digitized maps with IIIF manifests, and we have recently loaded every one of them into Allmaps. Eighty-five have been georeferenced so far, up from sixty-two in the middle of October, so this is moving quickly. There is still a lot to do: the headroom is enormous, and the barrier to entry is low, because this is just a web-based tool. And wherever one of our maps appears in Allmaps, it carries a Yale University Library badge with a link back to Digital Collections. So that is where Yale's maps stand. Now let me show you the four apps that make up Allmaps, live. [→]
 
 ## 28 · Allmaps Editor (19:15)
 

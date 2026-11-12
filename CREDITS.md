@@ -24,7 +24,7 @@ Georeference annotations: [annotations.allmaps.org](https://annotations.allmaps.
 ## Figures and sources
 
 - 13,259 cartographic objects with a IIIF manifest: Yale Digital Collections export of 23 July 2026.
-- 62 georeferenced Yale manifests: [Allmaps API, Yale University Library organization](https://api.allmaps.org/organizations/bc8296fa46cc4727/manifests?georeferenced=true), queried 17 October 2026.
+- 85 georeferenced Yale manifests: [Allmaps API, Yale University Library organization](https://api.allmaps.org/organizations/bc8296fa46cc4727/manifests?georeferenced=true), queried 12 November 2026 (62 on 17 October 2026).
 - Annotation size and the Georeference Extension: [IIIF news, 15 May 2023](https://iiif.io/news/2023/05/15/georef-extension-published/).
 - Partnership history, tiers, dates, licences and funding: [allmaps.org/iiif-partnership](https://allmaps.org/iiif-partnership).
 - Plugin and tile-server usage: [docs.allmaps.org](https://docs.allmaps.org/).
@@ -34,4 +34,4 @@ Basemap: [Protomaps](https://protomaps.com) (OpenStreetMap contributors).
 
 Slides 2–9 use a copy of Doolittle's Georeference Annotation ([annotations.allmaps.org/maps/444ba126f2bf8974](https://annotations.allmaps.org/maps/444ba126f2bf8974), CC0) with the same control points and the mask redrawn around the Nine Squares (York, Grove, State and George Streets; corners located from OpenStreetMap data, © OpenStreetMap contributors, ODbL). The copy is in `assets/annotations/doolittle-nine-squares.json`.
 
-Slides 27 and 32 draw all of Yale University Library's georeferenced maps together from `assets/annotations/yale-all.json`, compiled on 10 November 2026 from the Allmaps annotations for the Yale organization's manifests (Allmaps API), excluding three world- or continent-scale maps.
+Slides 27 and 32 draw all of Yale University Library's georeferenced maps together from `assets/annotations/yale-all.json`, compiled on 12 November 2026 from the [Yale organization's annotations](https://annotations.allmaps.org/organizations/yale?limit=2000) (71 of 81 maps). It leaves out seven world-, continent- or country-scale maps and three whose control points currently place them in the wrong location. Maps are ordered largest first, so the most detailed maps draw on top, and their IDs carry an `?overview` suffix so that their stacking order is independent of the same maps on other slides.

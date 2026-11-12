@@ -15,7 +15,7 @@ warpedMaps:
       colorize: false
 ---
 
-Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here together: maps of Connecticut and New England layered over one another. Zoom out and you find the rest, from New Orleans to Florence, each still served from Yale's own image server.
+Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here together, with the most detailed maps on top. Zoom in on New Haven and the city plans, harbour surveys and an 1894 sewer plan sit stacked in place. Zoom out and you find the rest, from San Francisco to Vienna and Kunming, each still served from Yale's own image server.
 
 <aside class="callout">
 
@@ -23,10 +23,10 @@ Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here to
 
 **13,259** digitized maps in Yale Digital Collections carry a IIIF manifest (export of 23 July 2026), and all of them have been loaded into Allmaps, ready to georeference.
 
-**62** have been georeferenced so far (Allmaps API, 17 October 2026). The headroom is enormous, and the barrier to entry is low.
+**85** have been georeferenced so far, up from 62 in mid-October (Allmaps API, 12 November 2026). The headroom is enormous, and the barrier to entry is low.
 
 </aside>
 
 Because our maps are delivered through IIIF, none of them had to be copied or uploaded. Wherever one appears in Allmaps it carries a *Yale University Library* badge with a link back to Digital Collections. The next four slides show the four Allmaps apps, live.
 
-*Zoom out to find Yale's maps from New Orleans to Florence.*
+*Zoom in on New Haven to see the city maps stacked; zoom out to find Yale's maps across the world.*
