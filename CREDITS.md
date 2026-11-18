@@ -24,7 +24,7 @@ Georeference annotations: [annotations.allmaps.org](https://annotations.allmaps.
 ## Figures and sources
 
 - 13,259 cartographic objects with a IIIF manifest: Yale Digital Collections export of 23 July 2026.
-- 133 georeferenced Yale manifests: [Allmaps API, Yale University Library organization](https://api.allmaps.org/organizations/bc8296fa46cc4727/manifests?georeferenced=true), queried 18 November 2026 (62 on 17 October 2026).
+- 133 georeferenced Yale manifests: [Allmaps API, Yale University Library organization](https://api.allmaps.org/organizations/bc8296fa46cc4727/manifests?georeferenced=true), queried 18 November 2026.
 - Annotation size and the Georeference Extension: [IIIF news, 15 May 2023](https://iiif.io/news/2023/05/15/georef-extension-published/).
 - Partnership history, tiers, dates, licences and funding: [allmaps.org/iiif-partnership](https://allmaps.org/iiif-partnership).
 - Plugin and tile-server usage: [docs.allmaps.org](https://docs.allmaps.org/).

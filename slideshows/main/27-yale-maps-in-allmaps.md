@@ -23,7 +23,7 @@ Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here to
 
 **13,259** digitized maps in Yale Digital Collections carry a IIIF manifest (export of 23 July 2026), and all of them have been loaded into Allmaps, ready to georeference.
 
-**133** have been georeferenced so far, up from 62 in mid-October (Allmaps API, 18 November 2026). The headroom is enormous, and the barrier to entry is low.
+**133** have been georeferenced to date (Allmaps API, 18 November 2026). The headroom is enormous, and the barrier to entry is low.
 
 </aside>
 
