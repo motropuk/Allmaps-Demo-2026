@@ -15,7 +15,7 @@ warpedMaps:
       colorize: false
 ---
 
-Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here together, with the most detailed maps on top. Zoom in on New Haven and the city plans, harbour surveys and an 1894 sewer plan sit stacked in place. Zoom out and you find the rest, from San Francisco to Vienna and Kunming, each still served from Yale's own image server.
+Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here together, with the most detailed maps on top. Zoom in on New Haven and 53 maps of the city, from 1812 to 1922, sit stacked in place, among them 24 Benham and Price, Lee & Co. city maps published between 1870 and 1917. Zoom out and you find the rest, from San Francisco to Vienna and Kunming, each still served from Yale's own image server.
 
 <aside class="callout">
 
@@ -23,7 +23,7 @@ Every map on screen is one of Yale's, georeferenced in Allmaps and drawn here to
 
 **13,259** digitized maps in Yale Digital Collections carry a IIIF manifest (export of 23 July 2026), and all of them have been loaded into Allmaps, ready to georeference.
 
-**85** have been georeferenced so far, up from 62 in mid-October (Allmaps API, 12 November 2026). The headroom is enormous, and the barrier to entry is low.
+**133** have been georeferenced so far, up from 62 in mid-October (Allmaps API, 18 November 2026). The headroom is enormous, and the barrier to entry is low.
 
 </aside>
 
