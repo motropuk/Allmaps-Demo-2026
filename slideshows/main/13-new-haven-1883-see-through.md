@@ -17,6 +17,6 @@ warpedMaps:
       opacity: 1
 ---
 
-Paper removed. The ward boundaries and the street names stay legible on the modern map. With only four control points the fit is looser in places; adding points in the Editor would tighten it.
+Paper removed. The ward boundaries and the street names stay legible on the modern map. Ten control points around downtown and the Green hold the centre closely; towards the edges of the city the fit is looser.
 
 *Zoom in to see where the fit is looser.*

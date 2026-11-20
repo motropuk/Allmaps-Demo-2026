@@ -80,11 +80,11 @@ Look along the shoreline. Compare the 1847 waterfront with today's and you can s
 
 ## 12 · 1883 (10:00)
 
-1883: Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. This one was placed with just four control points. [→]
+1883: Price, Lee and Company, the city directory publishers, surveyed by S. W. Searle. This one is placed with ten control points. [→]
 
 ## 13 · 1883, paper removed (10:20)
 
-Paper removed. The ward boundaries and the street names stay legible on the modern map. You will notice this one does not line up quite as well in places: four control points is not many, and the fit is looser between them. Anyone can open it in the Editor and add more points to tighten it. [→]
+Paper removed. The ward boundaries and the street names stay legible on the modern map. The ten control points sit around downtown and the Green, so the centre lines up closely, and towards the edges of the city the fit is looser. Anyone can open it in the Editor and add more points out there to tighten it. [→]
 
 ## 14 · 1893 (10:45)
 
